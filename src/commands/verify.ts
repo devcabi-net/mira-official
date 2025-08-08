@@ -29,7 +29,7 @@ export async function execute(
 ): Promise<void> {
   try {
     // Defer reply to give time for processing
-    await interaction.deferReply({ ephemeral: false })
+    await interaction.deferReply()
 
     // Get the target user
     const targetUserOption = interaction.options.getUser('target', true)

@@ -1,7 +1,8 @@
 import { 
   Events, 
   Interaction, 
-  ChatInputCommandInteraction 
+  ChatInputCommandInteraction,
+  MessageFlags
 } from 'discord.js'
 import { getCommands } from '@/commands'
 import { VerificationConfig } from '@/types'
@@ -43,7 +44,7 @@ export async function execute(
     if (interaction.replied || interaction.deferred) {
       await interaction.followUp(errorMessage)
     } else {
-      await interaction.reply({ ...errorMessage, ephemeral: true })
+      await interaction.reply({ ...errorMessage, flags: MessageFlags.Ephemeral })
     }
   }
 } 

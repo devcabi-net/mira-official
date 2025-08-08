@@ -133,15 +133,13 @@ export class VerificationService {
         result.reason
       )
 
-      await interaction.reply({ 
-        embeds: [successEmbed],
-        ephemeral: false 
+      await interaction.editReply({ 
+        embeds: [successEmbed]
       })
     } else {
       const errorEmbed = createErrorEmbed(result.message)
-      await interaction.reply({ 
-        embeds: [errorEmbed],
-        ephemeral: true 
+      await interaction.editReply({ 
+        embeds: [errorEmbed]
       })
     }
   }
