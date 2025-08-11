@@ -1,4 +1,4 @@
-import { EmbedBuilder } from 'discord.js'
+import { EmbedBuilder, GuildMember } from 'discord.js'
 import { EmbedOptions } from '@/types'
 
 const COLORS = {
@@ -40,19 +40,19 @@ export function createEmbed(options: EmbedOptions): EmbedBuilder {
 }
 
 export function createVerificationSuccessEmbed(
-  targetUser: string,
-  verifier: string,
+  targetUser: GuildMember,
+  verifier: GuildMember,
   reason?: string
 ): EmbedBuilder {
   const fields = [
     {
       name: '✅ Verification Successful',
-      value: `**Target User:** ${targetUser}`,
+      value: `**Target User:** ${targetUser.user.tag} (<@${targetUser.id}>)`,
       inline: false
     },
     {
       name: '🔐 Verified By',
-      value: verifier,
+      value: `${verifier.user.tag} (<@${verifier.id}>)`,
       inline: true
     }
   ]
@@ -74,19 +74,19 @@ export function createVerificationSuccessEmbed(
 }
 
 export function createVerificationLogEmbed(
-  targetUser: string,
-  verifier: string,
+  targetUser: GuildMember,
+  verifier: GuildMember,
   reason?: string
 ): EmbedBuilder {
   const fields = [
     {
       name: '👤 User Verified',
-      value: targetUser,
+      value: `**User:** <@${targetUser.id}>\n**Username:** ${targetUser.user.tag}`,
       inline: true
     },
     {
       name: '🔐 Verified By',
-      value: verifier,
+      value: `**User:** <@${verifier.id}>\n**Username:** ${verifier.user.tag}`,
       inline: true
     }
   ]

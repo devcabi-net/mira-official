@@ -33,14 +33,6 @@ export function validateVerifierPermissions(
     }
   }
 
-  // Check if user has manage roles permission
-  if (!hasRequiredPermissions(member, ['ManageRoles'])) {
-    return {
-      hasPermission: false,
-      error: 'You do not have the "Manage Roles" permission required to verify users.'
-    }
-  }
-
   return { hasPermission: true }
 }
 

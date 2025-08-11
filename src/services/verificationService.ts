@@ -10,8 +10,7 @@ import {
 } from '@/types'
 import { 
   validateVerifierPermissions, 
-  validateTargetUser,
-  canManageRole 
+  validateTargetUser
 } from '@/utils/permissions'
 import { 
   createVerificationSuccessEmbed,
@@ -49,15 +48,6 @@ export class VerificationService {
         return {
           success: false,
           message: targetValidation.error || 'Target user validation failed'
-        }
-      }
-
-      // Check if verifier can manage the roles
-      if (!canManageRole(verifier, this.config.unverifiedRoleId) ||
-          !canManageRole(verifier, this.config.verifiedRoleId)) {
-        return {
-          success: false,
-          message: 'You do not have permission to manage the required roles.'
         }
       }
 
@@ -109,8 +99,8 @@ export class VerificationService {
       }
 
       const logEmbed = createVerificationLogEmbed(
-        targetUser.user.tag,
-        verifier.user.tag,
+        targetUser,
+        verifier,
         reason
       )
 
@@ -128,8 +118,8 @@ export class VerificationService {
   ): Promise<void> {
     if (result.success && result.targetUser && result.verifier) {
       const successEmbed = createVerificationSuccessEmbed(
-        result.targetUser.user.tag,
-        result.verifier.user.tag,
+        result.targetUser,
+        result.verifier,
         result.reason
       )
 
