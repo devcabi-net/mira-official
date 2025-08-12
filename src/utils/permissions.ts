@@ -39,23 +39,17 @@ export function validateVerifierPermissions(
 export function validateTargetUser(
   targetMember: GuildMember,
   config: VerificationConfig
-): { isValid: boolean; error?: string } {
-  // Check if target user has the unverified role
-  if (!targetMember.roles.cache.has(config.unverifiedRoleId)) {
-    return {
-      isValid: false,
-      error: 'This user is already verified or does not have the unverified role.'
-    }
-  }
-
+): { isValid: boolean; error?: string; alreadyVerified?: boolean } {
   // Check if target user already has the verified role
   if (targetMember.roles.cache.has(config.verifiedRoleId)) {
     return {
       isValid: false,
-      error: 'This user is already verified.'
+      error: 'This user is already verified.',
+      alreadyVerified: true
     }
   }
 
+  // User is valid for verification (doesn't have verified role)
   return { isValid: true }
 }
 

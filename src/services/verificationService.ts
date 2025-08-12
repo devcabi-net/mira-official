@@ -15,7 +15,8 @@ import {
 import { 
   createVerificationSuccessEmbed,
   createVerificationLogEmbed,
-  createErrorEmbed 
+  createErrorEmbed,
+  createAlreadyVerifiedEmbed
 } from '@/utils/embeds'
 
 export class VerificationService {
@@ -47,7 +48,8 @@ export class VerificationService {
       if (!targetValidation.isValid) {
         return {
           success: false,
-          message: targetValidation.error || 'Target user validation failed'
+          message: targetValidation.error || 'Target user validation failed',
+          alreadyVerified: targetValidation.alreadyVerified || false
         }
       }
 
@@ -75,8 +77,10 @@ export class VerificationService {
   }
 
   private async performRoleChanges(targetUser: GuildMember): Promise<void> {
-    // Remove unverified role
-    await targetUser.roles.remove(this.config.unverifiedRoleId)
+    // Remove unverified role if it exists
+    if (targetUser.roles.cache.has(this.config.unverifiedRoleId)) {
+      await targetUser.roles.remove(this.config.unverifiedRoleId)
+    }
     
     // Add verified role
     await targetUser.roles.add(this.config.verifiedRoleId)
@@ -125,6 +129,13 @@ export class VerificationService {
 
       await interaction.editReply({ 
         embeds: [successEmbed]
+      })
+    } else if (result.alreadyVerified && result.targetUser) {
+      // Special case for already verified users
+      const alreadyVerifiedEmbed = createAlreadyVerifiedEmbed(result.targetUser)
+      
+      await interaction.editReply({ 
+        embeds: [alreadyVerifiedEmbed]
       })
     } else {
       const errorEmbed = createErrorEmbed(result.message)

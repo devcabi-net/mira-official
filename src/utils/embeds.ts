@@ -110,6 +110,15 @@ export function createVerificationLogEmbed(
   })
 }
 
+export function createAlreadyVerifiedEmbed(targetUser: GuildMember): EmbedBuilder {
+  return createEmbed({
+    title: '✅ Already Verified',
+    description: `${targetUser.user.tag} (<@${targetUser.id}>) is already verified.`,
+    color: COLORS.SUCCESS,
+    timestamp: true
+  })
+}
+
 export function createErrorEmbed(message: string): EmbedBuilder {
   return createEmbed({
     title: '❌ Error',

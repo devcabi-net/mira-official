@@ -28,8 +28,8 @@ export async function execute(
   config: VerificationConfig
 ): Promise<void> {
   try {
-    // Defer reply to give time for processing
-    await interaction.deferReply()
+    // Defer reply to give time for processing (ephemeral)
+    await interaction.deferReply({ ephemeral: true })
 
     // Get the target user
     const targetUserOption = interaction.options.getUser('target', true)
@@ -56,6 +56,11 @@ export async function execute(
       targetMember,
       reason
     )
+
+    // If the user is already verified, add the targetUser to the result for the response
+    if (!result.success && result.alreadyVerified) {
+      result.targetUser = targetMember
+    }
 
     // Send response
     await verificationService.sendVerificationResponse(interaction, result)

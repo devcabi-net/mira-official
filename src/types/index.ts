@@ -19,6 +19,7 @@ export interface VerificationResult {
   targetUser?: GuildMember
   verifier?: GuildMember
   reason?: string | undefined
+  alreadyVerified?: boolean
 }
 
 export interface CommandContext {
