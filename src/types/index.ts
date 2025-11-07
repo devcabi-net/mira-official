@@ -39,6 +39,7 @@ export interface BotConfig {
   clientId: string
   guildId: string
   verification: VerificationConfig
+  currency: CurrencyConfig
   environment: string
 }
 
@@ -61,4 +62,71 @@ export interface EmbedOptions {
     iconURL?: string
   }
   timestamp?: boolean
+}
+
+// Currency System Types
+export interface CurrencyUser {
+  userId: string
+  balance: number
+  totalEarned: number
+  lastActive: Date
+  voiceTimeMinutes: number
+  tier: CurrencyTier
+}
+
+export interface VoiceSession {
+  userId: string
+  channelId: string
+  startTime: Date
+  endTime?: Date
+  duration?: number // in minutes
+}
+
+export interface CurrencyTransaction {
+  id: string
+  userId: string
+  type: 'earn' | 'spend' | 'refund'
+  amount: number
+  reason: string
+  timestamp: Date
+  metadata?: Record<string, any>
+}
+
+export interface ModerationAction {
+  id: string
+  name: string
+  cost: number
+  cooldown: number // minutes
+  dailyLimit: number
+  requiredTier: CurrencyTier
+  description: string
+}
+
+export interface ModerationLog {
+  id: string
+  moderatorId: string
+  targetId: string
+  action: string
+  cost: number
+  reason: string
+  timestamp: Date
+  success: boolean
+  error?: string
+}
+
+export interface CurrencyConfig {
+  currencyPerMinute: number
+  protectedRoles: string[]
+  auditChannelId: string
+  moderationActions: ModerationAction[]
+  tierThresholds: Record<CurrencyTier, number>
+}
+
+export type CurrencyTier = 'bronze' | 'silver' | 'gold' | 'platinum' | 'diamond'
+
+export interface CurrencyResult {
+  success: boolean
+  message: string
+  newBalance?: number
+  tier?: CurrencyTier
 } 

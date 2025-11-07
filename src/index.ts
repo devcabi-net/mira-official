@@ -7,45 +7,69 @@ import {
 import { loadConfig } from '@/utils/config'
 import { getEvents } from '@/events'
 import { getCommands } from '@/commands'
+import { DataPersistenceService } from '@/services/dataPersistenceService'
+import { CurrencyService } from '@/services/currencyService'
+import { LoggingService } from '@/services/loggingService'
+import { TimeoutTracker } from '@/services/timeoutTracker'
 
 class MiraBot {
   private client: Client
   private config: ReturnType<typeof loadConfig>
+  private dataService: DataPersistenceService
+  private currencyService: CurrencyService
+  private loggingService: LoggingService
+  private timeoutTracker: TimeoutTracker
 
   constructor() {
     this.config = loadConfig()
+    
+    // Initialize services
+    this.dataService = new DataPersistenceService()
+    this.loggingService = new LoggingService(this.config.verification.logChannelId)
+    this.currencyService = new CurrencyService(this.config.currency, this.dataService, this.loggingService)
     
     this.client = new Client({
       intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMembers,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildVoiceStates // Required for voice tracking
       ]
     })
 
-    this.setupEventHandlers()
+    // Initialize timeout tracker after client is created
+    this.timeoutTracker = new TimeoutTracker(this.dataService, this.client)
+    
+    this.setupEventHandlers().catch(console.error)
     this.setupErrorHandling()
   }
 
-  private setupEventHandlers(): void {
+  private async setupEventHandlers(): Promise<void> {
+    // Initialize data service
+    await this.dataService.initialize()
+    
     const events = getEvents()
 
     for (const event of events.values()) {
       if (event.once) {
         this.client.once(event.name, (...args: any[]) => {
           if (event.name === Events.InteractionCreate) {
-            event.execute(args[0], this.config.verification)
+            event.execute(args[0], this.config.verification, this.currencyService, this.config.currency, this.timeoutTracker)
+          } else if (event.name === 'voiceStateUpdate') {
+            event.execute(args[0], args[1], this.currencyService, this.dataService)
           } else {
-            event.execute(args[0])
+            event.execute(...args)
           }
         })
       } else {
         this.client.on(event.name, (...args: any[]) => {
           if (event.name === Events.InteractionCreate) {
-            event.execute(args[0], this.config.verification)
+            event.execute(args[0], this.config.verification, this.currencyService, this.config.currency, this.timeoutTracker)
+          } else if (event.name === 'voiceStateUpdate') {
+            event.execute(args[0], args[1], this.currencyService, this.dataService)
           } else {
-            event.execute(args[0])
+            event.execute(...args)
           }
         })
       }

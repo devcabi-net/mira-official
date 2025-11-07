@@ -1,7 +1,8 @@
 import { 
   SlashCommandBuilder, 
   ChatInputCommandInteraction,
-  GuildMember 
+  GuildMember,
+  MessageFlags
 } from 'discord.js'
 import { VerificationService } from '@/services/verificationService'
 import { VerificationConfig } from '@/types'
@@ -29,7 +30,7 @@ export async function execute(
 ): Promise<void> {
   try {
     // Defer reply to give time for processing (ephemeral)
-    await interaction.deferReply({ ephemeral: true })
+    await interaction.deferReply({ flags: MessageFlags.Ephemeral })
 
     // Get the target user
     const targetUserOption = interaction.options.getUser('target', true)
