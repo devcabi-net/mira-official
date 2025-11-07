@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import { BotConfig, VerificationConfig, CurrencyConfig, CurrencyTier } from '@/types'
+import { StatbotConfig } from '@/services/statbotService'
 
 dotenv.config()
 
@@ -151,6 +152,15 @@ function loadCurrencyConfig(): CurrencyConfig {
       platinum: 50000,
       diamond: 100000
     }
+  }
+}
+
+export function loadStatbotConfig(): StatbotConfig {
+  return {
+    apiKey: process.env.STATBOT_API_KEY || '',
+    enabled: process.env.STATBOT_ENABLED === 'true',
+    syncInterval: parseInt(process.env.STATBOT_SYNC_INTERVAL || '3600000'), // 1 hour default
+    fallbackEnabled: process.env.STATBOT_FALLBACK_ENABLED !== 'false' // true by default
   }
 }
 

@@ -41,6 +41,12 @@ export interface BotConfig {
   verification: VerificationConfig
   currency: CurrencyConfig
   environment: string
+  statbot?: {
+    apiKey: string
+    enabled: boolean
+    syncInterval: number
+    fallbackEnabled: boolean
+  }
 }
 
 export interface CommandPermissions {

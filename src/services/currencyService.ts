@@ -207,6 +207,16 @@ export class CurrencyService {
     return result
   }
 
+  /**
+   * Update user's voice time (used for Statbot sync)
+   * This directly sets the voice time without awarding currency
+   */
+  async updateVoiceTime(userId: string, voiceTimeMinutes: number): Promise<void> {
+    const user = await this.getOrCreateUser(userId)
+    user.voiceTimeMinutes = voiceTimeMinutes
+    await this.dataService.saveUser(user)
+  }
+
   // Moderation Actions
   async canPerformModerationAction(
     userId: string, 
