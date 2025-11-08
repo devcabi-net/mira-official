@@ -5,7 +5,7 @@
 **Status:** Active & Running  
 **Reviewer:** AI Code Review Assistant
 
-> **Note:** This is a historical technical audit. For current development information, see [DEVELOPMENT.md](./DEVELOPMENT.md)
+> **Note:** This is a historical technical audit. For current development information, see [DEVELOPMENT.md](./DEVELOPMENT.md) in the docs folder.
 
 ---
 

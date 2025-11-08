@@ -230,8 +230,16 @@ Tiers must be **manually purchased** - they don't upgrade automatically!
 
 ## 📚 Documentation
 
-- **[Social Credits System Guide](./SOCIAL_CREDITS_SYSTEM.md)** - Comprehensive user guide for the Social Credits system
-- **[Development Documentation](./DEVELOPMENT.md)** - Technical documentation for developers (internal use)
+All documentation is located in the [`docs/`](./docs/) folder.
+
+### **User Documentation:**
+- **[Social Credits System Guide](./docs/SOCIAL_CREDITS_SYSTEM.md)** - Comprehensive user guide for the Social Credits system
+- **[Documentation Index](./docs/DOCUMENTATION.md)** - Overview of all documentation files
+
+### **Developer Documentation:**
+- **[Development Guide](./docs/DEVELOPMENT.md)** - Technical documentation for developers
+- **[Statbot Integration](./docs/STATBOT_INTEGRATION.md)** - Statbot API integration guide
+- **[Technical Audit Log](./docs/BOT_REVIEW.md)** - Historical technical audit (for reference)
 
 ---
 
@@ -303,5 +311,5 @@ This project is licensed under the MIT License.
 
 ---
 
-*For detailed Social Credits information, see [SOCIAL_CREDITS_SYSTEM.md](./SOCIAL_CREDITS_SYSTEM.md)*  
-*For developer documentation, see [DEVELOPMENT.md](./DEVELOPMENT.md)*
+*For detailed Social Credits information, see [docs/SOCIAL_CREDITS_SYSTEM.md](./docs/SOCIAL_CREDITS_SYSTEM.md)*  
+*For developer documentation, see [docs/DEVELOPMENT.md](./docs/DEVELOPMENT.md)*

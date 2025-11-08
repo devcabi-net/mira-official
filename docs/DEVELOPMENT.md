@@ -59,6 +59,13 @@ The bot follows a clean service-oriented architecture:
    - Auto-expires timeouts
    - Persists across bot restarts (when loaded)
 
+5. **StatbotService** (`src/services/statbotService.ts`)
+   - Optional integration with Statbot API
+   - Voice time validation and sync
+   - Bulk member statistics retrieval
+   - Rate limit handling
+   - Graceful fallback system
+
 ---
 
 ## 🏗️ Project Structure
@@ -84,7 +91,8 @@ src/
 │   ├── dataPersistenceService.ts  # Data persistence
 │   ├── loggingService.ts          # Logging functionality
 │   ├── timeoutTracker.ts         # Timeout management
-│   └── verificationService.ts     # Verification logic
+│   ├── verificationService.ts     # Verification logic
+│   └── statbotService.ts          # Statbot API integration (optional)
 │
 ├── types/                 # TypeScript type definitions
 │   └── index.ts          # Global types
@@ -277,6 +285,12 @@ Optional:
 CURRENCY_PER_MINUTE=1   # Credits per minute (default: 1)
 PROTECTED_ROLES=        # Comma-separated role IDs
 NODE_ENV=development    # Environment
+
+# Statbot API Integration (optional)
+STATBOT_API_KEY=        # Statbot API key
+STATBOT_ENABLED=false   # Enable Statbot integration
+STATBOT_SYNC_INTERVAL=3600000  # Sync interval in ms (default: 1 hour)
+STATBOT_FALLBACK_ENABLED=true  # Enable fallback if Statbot fails
 ```
 
 ### **Moderation Actions Configuration**
@@ -504,6 +518,26 @@ NODE_ENV=production
 
 ---
 
+## 🔌 Statbot Integration
+
+Mira bot includes optional integration with Statbot's API for enhanced voice time tracking and analytics.
+
+**Key Features:**
+- Voice time validation and sync
+- Bulk member statistics retrieval
+- Rate limit handling
+- Graceful fallback system
+
+**Documentation:** See [STATBOT_INTEGRATION.md](./STATBOT_INTEGRATION.md) for complete integration guide.
+
+**Configuration:**
+- Set `STATBOT_API_KEY` and `STATBOT_ENABLED=true` in `.env`
+- Integration is optional - bot works without it
+- Requires all Statbot Premium upgrades
+
+---
+
 *Last Updated: 2025-01-26*  
-*For user documentation, see [README.md](./README.md) and [SOCIAL_CREDITS_SYSTEM.md](./SOCIAL_CREDITS_SYSTEM.md)*
+*For user documentation, see [README.md](../README.md) and [SOCIAL_CREDITS_SYSTEM.md](./SOCIAL_CREDITS_SYSTEM.md)*  
+*For Statbot integration, see [STATBOT_INTEGRATION.md](./STATBOT_INTEGRATION.md)*
 

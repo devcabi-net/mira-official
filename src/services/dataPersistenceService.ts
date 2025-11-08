@@ -115,6 +115,13 @@ export class DataPersistenceService {
   async getUser(userId: string): Promise<CurrencyUser | null> {
     try {
       const data = await this.readJsonFile(this.usersFile)
+      // Ensure data is an object (not array or null)
+      if (!data || typeof data !== 'object' || Array.isArray(data)) {
+        console.warn(`Users file has invalid structure, reinitializing`)
+        const defaultData = {}
+        await this.writeJsonFile(this.usersFile, defaultData)
+        return null
+      }
       return data[userId] || null
     } catch (error) {
       console.error(`Failed to get user ${userId}:`, error)
@@ -126,9 +133,10 @@ export class DataPersistenceService {
     return this.writeQueue.enqueue(this.usersFile, async () => {
       try {
         const data = await this.readJsonFile(this.usersFile)
-        data[user.userId] = user
-        await this.writeJsonFile(this.usersFile, data)
-        console.log(`Successfully saved user ${user.userId}`)
+        // Ensure data is an object
+        const usersData = (data && typeof data === 'object' && !Array.isArray(data)) ? data : {}
+        usersData[user.userId] = user
+        await this.writeJsonFile(this.usersFile, usersData)
       } catch (error) {
         console.error(`Failed to save user ${user.userId}:`, error)
         throw error
@@ -139,6 +147,10 @@ export class DataPersistenceService {
   async getAllUsers(): Promise<CurrencyUser[]> {
     try {
       const data = await this.readJsonFile(this.usersFile)
+      // Ensure data is an object
+      if (!data || typeof data !== 'object' || Array.isArray(data)) {
+        return []
+      }
       return Object.values(data)
     } catch (error) {
       console.error('Failed to get all users:', error)
@@ -151,8 +163,10 @@ export class DataPersistenceService {
     return this.writeQueue.enqueue(this.transactionsFile, async () => {
       try {
         const transactions = await this.readJsonFile(this.transactionsFile)
-        transactions.push(transaction)
-        await this.writeJsonFile(this.transactionsFile, transactions)
+        // Ensure transactions is an array
+        const transactionsArray = Array.isArray(transactions) ? transactions : []
+        transactionsArray.push(transaction)
+        await this.writeJsonFile(this.transactionsFile, transactionsArray)
       } catch (error) {
         console.error('Failed to add transaction:', error)
         throw error
@@ -163,6 +177,10 @@ export class DataPersistenceService {
   async getUserTransactions(userId: string, limit: number = 50): Promise<CurrencyTransaction[]> {
     try {
       const transactions = await this.readJsonFile(this.transactionsFile)
+      // Ensure transactions is an array
+      if (!Array.isArray(transactions)) {
+        return []
+      }
       return transactions
         .filter((t: CurrencyTransaction) => t.userId === userId)
         .sort((a: CurrencyTransaction, b: CurrencyTransaction) => 
@@ -180,8 +198,10 @@ export class DataPersistenceService {
     return this.writeQueue.enqueue(this.moderationLogsFile, async () => {
       try {
         const logs = await this.readJsonFile(this.moderationLogsFile)
-        logs.push(log)
-        await this.writeJsonFile(this.moderationLogsFile, logs)
+        // Ensure logs is an array
+        const logsArray = Array.isArray(logs) ? logs : []
+        logsArray.push(log)
+        await this.writeJsonFile(this.moderationLogsFile, logsArray)
       } catch (error) {
         console.error('Failed to add moderation log:', error)
         throw error
@@ -192,6 +212,10 @@ export class DataPersistenceService {
   async getModerationLogs(limit: number = 100): Promise<ModerationLog[]> {
     try {
       const logs = await this.readJsonFile(this.moderationLogsFile)
+      // Ensure logs is an array
+      if (!Array.isArray(logs)) {
+        return []
+      }
       return logs
         .sort((a: ModerationLog, b: ModerationLog) => 
           new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
@@ -208,8 +232,10 @@ export class DataPersistenceService {
     return this.writeQueue.enqueue(this.voiceSessionsFile, async () => {
       try {
         const sessions = await this.readJsonFile(this.voiceSessionsFile)
-        sessions.push(session)
-        await this.writeJsonFile(this.voiceSessionsFile, sessions)
+        // Ensure sessions is an array
+        const sessionsArray = Array.isArray(sessions) ? sessions : []
+        sessionsArray.push(session)
+        await this.writeJsonFile(this.voiceSessionsFile, sessionsArray)
       } catch (error) {
         console.error('Failed to save voice session:', error)
         throw error
@@ -220,6 +246,10 @@ export class DataPersistenceService {
   async getActiveVoiceSessions(): Promise<VoiceSession[]> {
     try {
       const sessions = await this.readJsonFile(this.voiceSessionsFile)
+      // Ensure sessions is an array
+      if (!Array.isArray(sessions)) {
+        return []
+      }
       return sessions.filter((s: VoiceSession) => !s.endTime)
     } catch (error) {
       console.error('Failed to get active voice sessions:', error)
@@ -231,10 +261,70 @@ export class DataPersistenceService {
   private async readJsonFile(filePath: string): Promise<any> {
     try {
       const content = await fs.readFile(filePath, 'utf8')
-      return JSON.parse(content)
-    } catch (error) {
+      const trimmedContent = content.trim()
+      
+      // Handle empty files
+      if (!trimmedContent) {
+        console.warn(`JSON file ${filePath} is empty, initializing with default content`)
+        return this.getDefaultContentForFile(filePath)
+      }
+      
+      try {
+        return JSON.parse(trimmedContent)
+      } catch (parseError) {
+        // Handle corrupted JSON - try to recover
+        console.error(`JSON file ${filePath} is corrupted, attempting recovery:`, parseError)
+        return this.recoverCorruptedFile(filePath, parseError)
+      }
+    } catch (error: any) {
+      // Handle file not found or other read errors
+      if (error.code === 'ENOENT') {
+        console.warn(`JSON file ${filePath} not found, initializing with default content`)
+        const defaultContent = this.getDefaultContentForFile(filePath)
+        await this.writeJsonFile(filePath, defaultContent)
+        return defaultContent
+      }
       console.error(`Failed to read JSON file ${filePath}:`, error)
       throw error
+    }
+  }
+
+  private getDefaultContentForFile(filePath: string): any {
+    if (filePath === this.usersFile) {
+      return {}
+    } else if (filePath === this.transactionsFile) {
+      return []
+    } else if (filePath === this.moderationLogsFile) {
+      return []
+    } else if (filePath === this.voiceSessionsFile) {
+      return []
+    } else if (filePath === this.timeoutsFile) {
+      return []
+    }
+    return {}
+  }
+
+  private async recoverCorruptedFile(filePath: string, parseError: any): Promise<any> {
+    try {
+      // Try to create a backup of the corrupted file
+      const backupPath = `${filePath}.corrupted.${Date.now()}`
+      try {
+        const corruptedContent = await fs.readFile(filePath, 'utf8')
+        await fs.writeFile(backupPath, corruptedContent, 'utf8')
+        console.log(`Created backup of corrupted file: ${backupPath}`)
+      } catch (backupError) {
+        console.warn(`Failed to create backup of corrupted file:`, backupError)
+      }
+
+      // Initialize with default content
+      const defaultContent = this.getDefaultContentForFile(filePath)
+      await this.writeJsonFile(filePath, defaultContent)
+      console.warn(`Recovered corrupted file ${filePath} by reinitializing with default content`)
+      return defaultContent
+    } catch (recoveryError) {
+      console.error(`Failed to recover corrupted file ${filePath}:`, recoveryError)
+      // Return default content anyway to prevent complete failure
+      return this.getDefaultContentForFile(filePath)
     }
   }
 

@@ -32,15 +32,22 @@ export interface RateLimitInfo {
 }
 
 export interface StatbotMemberCount {
-  timestamp: string
-  count: number
+  unixTimestamp: number // Timestamp in milliseconds since epoch
+  count: number // Number of unique members
 }
 
 export interface StatbotMemberStats {
-  userId: string
+  id: string // Discord user ID (snowflake)
   messageCount: number
-  voiceMinutes: number
-  channelsParticipated: number
+  voiceCount: number // Voice activity count (in minutes or activity units)
+  messageChannelCount: number
+  voiceChannelCount: number
+  username: string
+  type: 'user' | 'bot'
+  globalName: string
+  nick: string
+  avatar: string // Avatar hash (empty string if not available)
+  guildAvatar: string // Guild avatar hash (empty string if not available)
 }
 
 export interface StatbotMessageSum {
@@ -250,8 +257,9 @@ export class StatbotService {
    * This is a helper method that doesn't make API calls
    */
   getUserVoiceTimeFromStats(userId: string, memberStats: StatbotMemberStats[]): number {
-    const userStats = memberStats.find(stat => stat.userId === userId)
-    return userStats?.voiceMinutes || 0
+    const userStats = memberStats.find(stat => stat.id === userId)
+    // voiceCount appears to be in minutes based on Statbot's tracking
+    return userStats?.voiceCount || 0
   }
 
   /**
@@ -356,9 +364,10 @@ export class StatbotService {
           try {
             statbotMemberStats = await this.getGuildMemberStats(guildId)
             // Create a map for quick lookup
+            // Note: voiceCount from Statbot API represents voice activity (in minutes)
             statbotMemberStats.forEach(stat => {
-              if (stat.voiceMinutes !== undefined) {
-                statbotStatsMap.set(stat.userId, stat.voiceMinutes)
+              if (stat.voiceCount !== undefined) {
+                statbotStatsMap.set(stat.id, stat.voiceCount)
               }
             })
             break // Success
