@@ -1,0 +1,3138 @@
+{
+  "407214151837024257": {
+    "userId": "407214151837024257",
+    "balance": 19701,
+    "totalEarned": 19701,
+    "lastActive": "2025-11-07T21:02:24.851Z",
+    "voiceTimeMinutes": 291670,
+    "tier": "silver"
+  },
+  "116992402190893065": {
+    "userId": "116992402190893065",
+    "balance": 897456,
+    "totalEarned": 1001606,
+    "lastActive": "2025-11-07T11:20:36.346Z",
+    "voiceTimeMinutes": 1001605,
+    "tier": "diamond"
+  },
+  "684773505157431347": {
+    "userId": "684773505157431347",
+    "balance": 2413,
+    "totalEarned": 2413,
+    "lastActive": "2025-11-07T21:02:45.890Z",
+    "voiceTimeMinutes": 41292,
+    "tier": "bronze"
+  },
+  "1373363085066375200": {
+    "userId": "1373363085066375200",
+    "balance": 1124,
+    "totalEarned": 1124,
+    "lastActive": "2025-11-07T12:09:31.060Z",
+    "voiceTimeMinutes": 13042,
+    "tier": "bronze"
+  },
+  "1281479495504760832": {
+    "userId": "1281479495504760832",
+    "balance": 92,
+    "totalEarned": 92,
+    "lastActive": "2025-11-07T06:25:10.406Z",
+    "voiceTimeMinutes": 3821,
+    "tier": "bronze"
+  },
+  "1408662514702749777": {
+    "userId": "1408662514702749777",
+    "balance": 77,
+    "totalEarned": 77,
+    "lastActive": "2025-11-04T01:22:25.029Z",
+    "voiceTimeMinutes": 7374,
+    "tier": "bronze"
+  },
+  "994139794533781595": {
+    "userId": "994139794533781595",
+    "balance": 131,
+    "totalEarned": 131,
+    "lastActive": "2025-11-07T13:02:10.873Z",
+    "voiceTimeMinutes": 38700,
+    "tier": "bronze"
+  },
+  "1301980506237304834": {
+    "userId": "1301980506237304834",
+    "balance": 69,
+    "totalEarned": 69,
+    "lastActive": "2025-11-07T15:43:24.128Z",
+    "voiceTimeMinutes": 449,
+    "tier": "bronze"
+  },
+  "720117482416767067": {
+    "userId": "720117482416767067",
+    "balance": 10023,
+    "totalEarned": 10023,
+    "lastActive": "2025-11-07T17:13:30.731Z",
+    "voiceTimeMinutes": 48210,
+    "tier": "bronze"
+  },
+  "1341276229336301620": {
+    "userId": "1341276229336301620",
+    "balance": 562,
+    "totalEarned": 562,
+    "lastActive": "2025-11-07T15:45:04.826Z",
+    "voiceTimeMinutes": 23270,
+    "tier": "bronze"
+  },
+  "253012392164720641": {
+    "userId": "253012392164720641",
+    "balance": 61,
+    "totalEarned": 61,
+    "lastActive": "2025-11-03T21:54:33.468Z",
+    "voiceTimeMinutes": 41994,
+    "tier": "bronze"
+  },
+  "1373185769702821889": {
+    "userId": "1373185769702821889",
+    "balance": 204,
+    "totalEarned": 204,
+    "lastActive": "2025-11-07T14:57:24.328Z",
+    "voiceTimeMinutes": 5984,
+    "tier": "bronze"
+  },
+  "1215749251360100412": {
+    "userId": "1215749251360100412",
+    "balance": 3323,
+    "totalEarned": 3323,
+    "lastActive": "2025-11-07T17:44:52.721Z",
+    "voiceTimeMinutes": 132980,
+    "tier": "bronze"
+  },
+  "663980677049352200": {
+    "userId": "663980677049352200",
+    "balance": 158,
+    "totalEarned": 158,
+    "lastActive": "2025-10-30T06:38:31.122Z",
+    "voiceTimeMinutes": 1774,
+    "tier": "bronze"
+  },
+  "949378737294680154": {
+    "userId": "949378737294680154",
+    "balance": 152,
+    "totalEarned": 152,
+    "lastActive": "2025-11-02T06:52:25.128Z",
+    "voiceTimeMinutes": 1778,
+    "tier": "bronze"
+  },
+  "735414780176629801": {
+    "userId": "735414780176629801",
+    "balance": 316,
+    "totalEarned": 316,
+    "lastActive": "2025-11-06T05:48:28.362Z",
+    "voiceTimeMinutes": 6909,
+    "tier": "bronze"
+  },
+  "702907749184307240": {
+    "userId": "702907749184307240",
+    "balance": 176,
+    "totalEarned": 176,
+    "lastActive": "2025-11-05T19:46:22.009Z",
+    "voiceTimeMinutes": 658,
+    "tier": "bronze"
+  },
+  "786352482858434610": {
+    "userId": "786352482858434610",
+    "balance": 457,
+    "totalEarned": 457,
+    "lastActive": "2025-11-02T05:42:20.337Z",
+    "voiceTimeMinutes": 11326,
+    "tier": "bronze"
+  },
+  "489463728920854538": {
+    "userId": "489463728920854538",
+    "balance": 1654,
+    "totalEarned": 1654,
+    "lastActive": "2025-11-02T04:40:05.283Z",
+    "voiceTimeMinutes": 52046,
+    "tier": "bronze"
+  },
+  "503152755238502420": {
+    "userId": "503152755238502420",
+    "balance": 61,
+    "totalEarned": 61,
+    "lastActive": "2025-11-05T12:12:40.861Z",
+    "voiceTimeMinutes": 808,
+    "tier": "bronze"
+  },
+  "1112871113630945343": {
+    "userId": "1112871113630945343",
+    "balance": 415,
+    "totalEarned": 415,
+    "lastActive": "2025-11-05T13:05:22.258Z",
+    "voiceTimeMinutes": 59126,
+    "tier": "bronze"
+  },
+  "816462644731052034": {
+    "userId": "816462644731052034",
+    "balance": 847,
+    "totalEarned": 847,
+    "lastActive": "2025-11-07T16:59:18.764Z",
+    "voiceTimeMinutes": 19069,
+    "tier": "bronze"
+  },
+  "1430763282720886877": {
+    "userId": "1430763282720886877",
+    "balance": 24,
+    "totalEarned": 24,
+    "lastActive": "2025-10-25T19:08:38.672Z",
+    "voiceTimeMinutes": 233,
+    "tier": "bronze"
+  },
+  "491560191624740865": {
+    "userId": "491560191624740865",
+    "balance": 1367,
+    "totalEarned": 1367,
+    "lastActive": "2025-11-07T18:28:45.834Z",
+    "voiceTimeMinutes": 8310,
+    "tier": "bronze"
+  },
+  "854801138909446166": {
+    "userId": "854801138909446166",
+    "balance": 57,
+    "totalEarned": 57,
+    "lastActive": "2025-10-26T00:32:09.838Z",
+    "voiceTimeMinutes": 3814,
+    "tier": "bronze"
+  },
+  "412347257233604609": {
+    "userId": "412347257233604609",
+    "balance": 323,
+    "totalEarned": 323,
+    "lastActive": "2025-11-07T21:03:06.288Z",
+    "voiceTimeMinutes": 29734,
+    "tier": "bronze"
+  },
+  "1067517354856173668": {
+    "userId": "1067517354856173668",
+    "balance": 87,
+    "totalEarned": 87,
+    "lastActive": "2025-10-25T20:35:33.317Z",
+    "voiceTimeMinutes": 1118,
+    "tier": "bronze"
+  },
+  "1313380989984047104": {
+    "userId": "1313380989984047104",
+    "balance": 1210,
+    "totalEarned": 1210,
+    "lastActive": "2025-11-07T08:31:34.191Z",
+    "voiceTimeMinutes": 20978,
+    "tier": "bronze"
+  },
+  "713760642397634641": {
+    "userId": "713760642397634641",
+    "balance": 217,
+    "totalEarned": 217,
+    "lastActive": "2025-11-04T01:46:58.363Z",
+    "voiceTimeMinutes": 4584,
+    "tier": "bronze"
+  },
+  "1376808475836944395": {
+    "userId": "1376808475836944395",
+    "balance": 62,
+    "totalEarned": 62,
+    "lastActive": "2025-11-02T21:48:50.885Z",
+    "voiceTimeMinutes": 9522,
+    "tier": "bronze"
+  },
+  "1399956226430992394": {
+    "userId": "1399956226430992394",
+    "balance": 132,
+    "totalEarned": 132,
+    "lastActive": "2025-10-28T02:25:55.507Z",
+    "voiceTimeMinutes": 259,
+    "tier": "bronze"
+  },
+  "1291691458809696287": {
+    "userId": "1291691458809696287",
+    "balance": 190,
+    "totalEarned": 190,
+    "lastActive": "2025-11-05T20:16:14.445Z",
+    "voiceTimeMinutes": 4867,
+    "tier": "bronze"
+  },
+  "1334227398505398302": {
+    "userId": "1334227398505398302",
+    "balance": 41,
+    "totalEarned": 41,
+    "lastActive": "2025-10-25T20:42:04.599Z",
+    "voiceTimeMinutes": 2681,
+    "tier": "bronze"
+  },
+  "197624432175349760": {
+    "userId": "197624432175349760",
+    "balance": 763,
+    "totalEarned": 763,
+    "lastActive": "2025-11-02T04:41:25.824Z",
+    "voiceTimeMinutes": 4738,
+    "tier": "bronze"
+  },
+  "1209420878022971469": {
+    "userId": "1209420878022971469",
+    "balance": 155,
+    "totalEarned": 155,
+    "lastActive": "2025-11-04T07:05:58.211Z",
+    "voiceTimeMinutes": 1869,
+    "tier": "bronze"
+  },
+  "316706311477657600": {
+    "userId": "316706311477657600",
+    "balance": 26,
+    "totalEarned": 26,
+    "lastActive": "2025-11-07T16:13:56.122Z",
+    "voiceTimeMinutes": 141005,
+    "tier": "bronze"
+  },
+  "647967404143673376": {
+    "userId": "647967404143673376",
+    "balance": 381,
+    "totalEarned": 381,
+    "lastActive": "2025-10-28T17:10:03.284Z",
+    "voiceTimeMinutes": 144985,
+    "tier": "bronze"
+  },
+  "1038667190792106015": {
+    "userId": "1038667190792106015",
+    "balance": 2165,
+    "totalEarned": 2165,
+    "lastActive": "2025-11-07T21:02:27.008Z",
+    "voiceTimeMinutes": 82059,
+    "tier": "bronze"
+  },
+  "349633682870632449": {
+    "userId": "349633682870632449",
+    "balance": 561,
+    "totalEarned": 561,
+    "lastActive": "2025-11-07T21:02:49.101Z",
+    "voiceTimeMinutes": 19687,
+    "tier": "bronze"
+  },
+  "981673473556484126": {
+    "userId": "981673473556484126",
+    "balance": 16724,
+    "totalEarned": 16724,
+    "lastActive": "2025-11-07T20:16:49.849Z",
+    "voiceTimeMinutes": 213596,
+    "tier": "bronze"
+  },
+  "490692448599932948": {
+    "userId": "490692448599932948",
+    "balance": 6530,
+    "totalEarned": 6530,
+    "lastActive": "2025-11-07T08:57:31.155Z",
+    "voiceTimeMinutes": 9425,
+    "tier": "bronze"
+  },
+  "365807923013746692": {
+    "userId": "365807923013746692",
+    "balance": 2360,
+    "totalEarned": 2360,
+    "lastActive": "2025-11-02T06:18:42.702Z",
+    "voiceTimeMinutes": 41609,
+    "tier": "bronze"
+  },
+  "199950780671852545": {
+    "userId": "199950780671852545",
+    "balance": 607,
+    "totalEarned": 607,
+    "lastActive": "2025-11-07T21:37:46.800Z",
+    "voiceTimeMinutes": 6988,
+    "tier": "bronze"
+  },
+  "385201819753775104": {
+    "userId": "385201819753775104",
+    "balance": 1400,
+    "totalEarned": 1400,
+    "lastActive": "2025-11-04T05:49:19.054Z",
+    "voiceTimeMinutes": 37270,
+    "tier": "bronze"
+  },
+  "893558806255108138": {
+    "userId": "893558806255108138",
+    "balance": 2106,
+    "totalEarned": 2106,
+    "lastActive": "2025-11-07T17:37:42.723Z",
+    "voiceTimeMinutes": 55822,
+    "tier": "bronze"
+  },
+  "1099888899960090634": {
+    "userId": "1099888899960090634",
+    "balance": 3418,
+    "totalEarned": 3418,
+    "lastActive": "2025-11-07T20:33:11.905Z",
+    "voiceTimeMinutes": 9526,
+    "tier": "bronze"
+  },
+  "1334026797427327000": {
+    "userId": "1334026797427327000",
+    "balance": 76,
+    "totalEarned": 76,
+    "lastActive": "2025-11-04T23:03:22.112Z",
+    "voiceTimeMinutes": 801,
+    "tier": "bronze"
+  },
+  "1070855907371663440": {
+    "userId": "1070855907371663440",
+    "balance": 5459,
+    "totalEarned": 5459,
+    "lastActive": "2025-11-07T17:20:44.712Z",
+    "voiceTimeMinutes": 84682,
+    "tier": "bronze"
+  },
+  "737428311390683226": {
+    "userId": "737428311390683226",
+    "balance": 243,
+    "totalEarned": 243,
+    "lastActive": "2025-11-07T08:56:40.953Z",
+    "voiceTimeMinutes": 32266,
+    "tier": "bronze"
+  },
+  "1408141030301237330": {
+    "userId": "1408141030301237330",
+    "balance": 2374,
+    "totalEarned": 2374,
+    "lastActive": "2025-11-07T19:17:00.232Z",
+    "voiceTimeMinutes": 7919,
+    "tier": "bronze"
+  },
+  "1071043235121733814": {
+    "userId": "1071043235121733814",
+    "balance": 170,
+    "totalEarned": 170,
+    "lastActive": "2025-10-26T20:35:43.942Z",
+    "voiceTimeMinutes": 12983,
+    "tier": "bronze"
+  },
+  "1102267072991461436": {
+    "userId": "1102267072991461436",
+    "balance": 53,
+    "totalEarned": 53,
+    "lastActive": "2025-10-27T20:11:53.514Z",
+    "voiceTimeMinutes": 382,
+    "tier": "bronze"
+  },
+  "894247366805311540": {
+    "userId": "894247366805311540",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-10-25T22:23:50.055Z",
+    "voiceTimeMinutes": 1559,
+    "tier": "bronze"
+  },
+  "937186553971761282": {
+    "userId": "937186553971761282",
+    "balance": 1126,
+    "totalEarned": 1126,
+    "lastActive": "2025-11-07T14:53:55.648Z",
+    "voiceTimeMinutes": 29702,
+    "tier": "bronze"
+  },
+  "1349444096246153298": {
+    "userId": "1349444096246153298",
+    "balance": 2256,
+    "totalEarned": 2256,
+    "lastActive": "2025-11-06T20:56:30.020Z",
+    "voiceTimeMinutes": 18678,
+    "tier": "bronze"
+  },
+  "792630675059900449": {
+    "userId": "792630675059900449",
+    "balance": 120,
+    "totalEarned": 120,
+    "lastActive": "2025-11-07T16:45:39.715Z",
+    "voiceTimeMinutes": 16941,
+    "tier": "bronze"
+  },
+  "1113868107006627891": {
+    "userId": "1113868107006627891",
+    "balance": 512,
+    "totalEarned": 512,
+    "lastActive": "2025-11-07T14:51:40.102Z",
+    "voiceTimeMinutes": 63779,
+    "tier": "bronze"
+  },
+  "1009098938512572426": {
+    "userId": "1009098938512572426",
+    "balance": 272,
+    "totalEarned": 272,
+    "lastActive": "2025-11-07T18:31:32.925Z",
+    "voiceTimeMinutes": 51765,
+    "tier": "bronze"
+  },
+  "411916947773587456": {
+    "userId": "411916947773587456",
+    "balance": 1611,
+    "totalEarned": 1611,
+    "lastActive": "2025-11-07T21:03:13.324Z",
+    "voiceTimeMinutes": 232108,
+    "tier": "bronze"
+  },
+  "1195742478536544408": {
+    "userId": "1195742478536544408",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-10-26T00:15:15.925Z",
+    "voiceTimeMinutes": 214,
+    "tier": "bronze"
+  },
+  "417173455335718912": {
+    "userId": "417173455335718912",
+    "balance": 632,
+    "totalEarned": 632,
+    "lastActive": "2025-11-07T06:06:58.501Z",
+    "voiceTimeMinutes": 15607,
+    "tier": "bronze"
+  },
+  "1214346682502881370": {
+    "userId": "1214346682502881370",
+    "balance": 195,
+    "totalEarned": 195,
+    "lastActive": "2025-11-07T02:14:46.706Z",
+    "voiceTimeMinutes": 35502,
+    "tier": "bronze"
+  },
+  "268839368943206400": {
+    "userId": "268839368943206400",
+    "balance": 147,
+    "totalEarned": 147,
+    "lastActive": "2025-11-07T17:47:17.634Z",
+    "voiceTimeMinutes": 67197,
+    "tier": "bronze"
+  },
+  "115126460208906248": {
+    "userId": "115126460208906248",
+    "balance": 119,
+    "totalEarned": 119,
+    "lastActive": "2025-11-06T04:34:04.080Z",
+    "voiceTimeMinutes": 3330,
+    "tier": "bronze"
+  },
+  "1430738888443433041": {
+    "userId": "1430738888443433041",
+    "balance": 242,
+    "totalEarned": 242,
+    "lastActive": "2025-11-06T18:52:30.499Z",
+    "voiceTimeMinutes": 242,
+    "tier": "bronze"
+  },
+  "1430226187954688081": {
+    "userId": "1430226187954688081",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-10-26T01:13:14.449Z",
+    "voiceTimeMinutes": 353,
+    "tier": "bronze"
+  },
+  "870381619389800448": {
+    "userId": "870381619389800448",
+    "balance": 24,
+    "totalEarned": 24,
+    "lastActive": "2025-10-28T07:44:42.358Z",
+    "voiceTimeMinutes": 559,
+    "tier": "bronze"
+  },
+  "858265660659466300": {
+    "userId": "858265660659466300",
+    "balance": 163,
+    "totalEarned": 163,
+    "lastActive": "2025-11-07T13:07:54.738Z",
+    "voiceTimeMinutes": 1727,
+    "tier": "bronze"
+  },
+  "176015441100013568": {
+    "userId": "176015441100013568",
+    "balance": 187,
+    "totalEarned": 187,
+    "lastActive": "2025-11-07T05:07:52.952Z",
+    "voiceTimeMinutes": 282,
+    "tier": "bronze"
+  },
+  "1231229893061120022": {
+    "userId": "1231229893061120022",
+    "balance": 119,
+    "totalEarned": 119,
+    "lastActive": "2025-11-01T07:09:41.078Z",
+    "voiceTimeMinutes": 884,
+    "tier": "bronze"
+  },
+  "498887503634497536": {
+    "userId": "498887503634497536",
+    "balance": 100,
+    "totalEarned": 100,
+    "lastActive": "2025-10-30T19:34:13.413Z",
+    "voiceTimeMinutes": 2892,
+    "tier": "bronze"
+  },
+  "1185764079793623092": {
+    "userId": "1185764079793623092",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-10-26T02:38:24.146Z",
+    "voiceTimeMinutes": 1062,
+    "tier": "bronze"
+  },
+  "227938005820768256": {
+    "userId": "227938005820768256",
+    "balance": 115,
+    "totalEarned": 115,
+    "lastActive": "2025-10-31T16:59:40.969Z",
+    "voiceTimeMinutes": 144,
+    "tier": "bronze"
+  },
+  "778082264629641216": {
+    "userId": "778082264629641216",
+    "balance": 1362,
+    "totalEarned": 1362,
+    "lastActive": "2025-11-07T16:22:35.941Z",
+    "voiceTimeMinutes": 1669,
+    "tier": "bronze"
+  },
+  "828793932757336094": {
+    "userId": "828793932757336094",
+    "balance": 19,
+    "totalEarned": 19,
+    "lastActive": "2025-11-02T03:16:24.177Z",
+    "voiceTimeMinutes": 11040,
+    "tier": "bronze"
+  },
+  "934938076277518436": {
+    "userId": "934938076277518436",
+    "balance": 1619,
+    "totalEarned": 1619,
+    "lastActive": "2025-11-07T17:12:54.206Z",
+    "voiceTimeMinutes": 93808,
+    "tier": "bronze"
+  },
+  "378737437322641410": {
+    "userId": "378737437322641410",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-10-29T15:32:12.989Z",
+    "voiceTimeMinutes": 273,
+    "tier": "bronze"
+  },
+  "283352791743725580": {
+    "userId": "283352791743725580",
+    "balance": 183,
+    "totalEarned": 183,
+    "lastActive": "2025-11-06T19:18:32.496Z",
+    "voiceTimeMinutes": 8336,
+    "tier": "bronze"
+  },
+  "1218385106872303668": {
+    "userId": "1218385106872303668",
+    "balance": 57,
+    "totalEarned": 57,
+    "lastActive": "2025-11-04T23:52:48.836Z",
+    "voiceTimeMinutes": 1864,
+    "tier": "bronze"
+  },
+  "940891948984705045": {
+    "userId": "940891948984705045",
+    "balance": 603,
+    "totalEarned": 603,
+    "lastActive": "2025-11-07T05:29:08.066Z",
+    "voiceTimeMinutes": 40877,
+    "tier": "bronze"
+  },
+  "1065311441143484477": {
+    "userId": "1065311441143484477",
+    "balance": 69,
+    "totalEarned": 69,
+    "lastActive": "2025-10-28T21:06:08.381Z",
+    "voiceTimeMinutes": 238,
+    "tier": "bronze"
+  },
+  "475130373630853140": {
+    "userId": "475130373630853140",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-10-26T04:16:28.030Z",
+    "voiceTimeMinutes": 265,
+    "tier": "bronze"
+  },
+  "249605304075943937": {
+    "userId": "249605304075943937",
+    "balance": 181,
+    "totalEarned": 181,
+    "lastActive": "2025-11-06T04:17:43.001Z",
+    "voiceTimeMinutes": 284,
+    "tier": "bronze"
+  },
+  "1329975423701880855": {
+    "userId": "1329975423701880855",
+    "balance": 30,
+    "totalEarned": 30,
+    "lastActive": "2025-11-02T23:24:52.745Z",
+    "voiceTimeMinutes": 1336,
+    "tier": "bronze"
+  },
+  "1365921899426746469": {
+    "userId": "1365921899426746469",
+    "balance": 87,
+    "totalEarned": 87,
+    "lastActive": "2025-11-05T01:17:59.186Z",
+    "voiceTimeMinutes": 3904,
+    "tier": "bronze"
+  },
+  "177654230734077952": {
+    "userId": "177654230734077952",
+    "balance": 64,
+    "totalEarned": 64,
+    "lastActive": "2025-11-04T23:05:26.351Z",
+    "voiceTimeMinutes": 127437,
+    "tier": "bronze"
+  },
+  "1046871245754478687": {
+    "userId": "1046871245754478687",
+    "balance": 920,
+    "totalEarned": 920,
+    "lastActive": "2025-11-06T16:15:04.321Z",
+    "voiceTimeMinutes": 3486,
+    "tier": "bronze"
+  },
+  "851802776879104000": {
+    "userId": "851802776879104000",
+    "balance": 213,
+    "totalEarned": 213,
+    "lastActive": "2025-11-05T11:53:19.615Z",
+    "voiceTimeMinutes": 4284,
+    "tier": "bronze"
+  },
+  "187287008207437835": {
+    "userId": "187287008207437835",
+    "balance": 53,
+    "totalEarned": 53,
+    "lastActive": "2025-10-26T08:24:59.880Z",
+    "voiceTimeMinutes": 53,
+    "tier": "bronze"
+  },
+  "273687438751301633": {
+    "userId": "273687438751301633",
+    "balance": 23,
+    "totalEarned": 23,
+    "lastActive": "2025-11-03T04:41:33.067Z",
+    "voiceTimeMinutes": 142,
+    "tier": "bronze"
+  },
+  "1163287957831163944": {
+    "userId": "1163287957831163944",
+    "balance": 345,
+    "totalEarned": 345,
+    "lastActive": "2025-11-07T05:26:02.846Z",
+    "voiceTimeMinutes": 12434,
+    "tier": "bronze"
+  },
+  "1083312279824646194": {
+    "userId": "1083312279824646194",
+    "balance": 901,
+    "totalEarned": 901,
+    "lastActive": "2025-11-04T15:44:12.174Z",
+    "voiceTimeMinutes": 14276,
+    "tier": "bronze"
+  },
+  "207352925280927744": {
+    "userId": "207352925280927744",
+    "balance": 197,
+    "totalEarned": 197,
+    "lastActive": "2025-11-07T12:36:48.571Z",
+    "voiceTimeMinutes": 3500,
+    "tier": "bronze"
+  },
+  "1384479679158816818": {
+    "userId": "1384479679158816818",
+    "balance": 877147,
+    "totalEarned": 877147,
+    "lastActive": "2025-11-06T22:34:33.847Z",
+    "voiceTimeMinutes": 877147,
+    "tier": "bronze"
+  },
+  "883479792551358504": {
+    "userId": "883479792551358504",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-10-26T08:26:16.501Z",
+    "voiceTimeMinutes": 29210,
+    "tier": "bronze"
+  },
+  "613868471608016896": {
+    "userId": "613868471608016896",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-10-26T08:35:21.105Z",
+    "voiceTimeMinutes": 86,
+    "tier": "bronze"
+  },
+  "204012947754713088": {
+    "userId": "204012947754713088",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-07T19:17:34.087Z",
+    "voiceTimeMinutes": 99387,
+    "tier": "bronze"
+  },
+  "752433012976779364": {
+    "userId": "752433012976779364",
+    "balance": 1647,
+    "totalEarned": 1647,
+    "lastActive": "2025-11-07T10:56:35.909Z",
+    "voiceTimeMinutes": 39578,
+    "tier": "bronze"
+  },
+  "1062640844672352256": {
+    "userId": "1062640844672352256",
+    "balance": 1442,
+    "totalEarned": 1442,
+    "lastActive": "2025-11-07T14:41:25.771Z",
+    "voiceTimeMinutes": 33018,
+    "tier": "bronze"
+  },
+  "1196212745876541521": {
+    "userId": "1196212745876541521",
+    "balance": 77,
+    "totalEarned": 77,
+    "lastActive": "2025-11-07T04:56:54.024Z",
+    "voiceTimeMinutes": 22796,
+    "tier": "bronze"
+  },
+  "1057281204128329829": {
+    "userId": "1057281204128329829",
+    "balance": 1017,
+    "totalEarned": 1017,
+    "lastActive": "2025-11-07T00:09:55.825Z",
+    "voiceTimeMinutes": 19247,
+    "tier": "bronze"
+  },
+  "886340655671046176": {
+    "userId": "886340655671046176",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-11-04T13:07:11.052Z",
+    "voiceTimeMinutes": 198,
+    "tier": "bronze"
+  },
+  "1313726724038594584": {
+    "userId": "1313726724038594584",
+    "balance": 2443,
+    "totalEarned": 2443,
+    "lastActive": "2025-11-02T13:35:29.464Z",
+    "voiceTimeMinutes": 7811,
+    "tier": "bronze"
+  },
+  "1246977794844659795": {
+    "userId": "1246977794844659795",
+    "balance": 954,
+    "totalEarned": 954,
+    "lastActive": "2025-11-07T20:27:50.347Z",
+    "voiceTimeMinutes": 13859,
+    "tier": "bronze"
+  },
+  "1156583419162152970": {
+    "userId": "1156583419162152970",
+    "balance": 14,
+    "totalEarned": 14,
+    "lastActive": "2025-10-26T12:22:59.863Z",
+    "voiceTimeMinutes": 306,
+    "tier": "bronze"
+  },
+  "1412155532923371751": {
+    "userId": "1412155532923371751",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-10-29T06:00:41.870Z",
+    "voiceTimeMinutes": 179,
+    "tier": "bronze"
+  },
+  "576447224406343691": {
+    "userId": "576447224406343691",
+    "balance": 130,
+    "totalEarned": 130,
+    "lastActive": "2025-10-30T11:44:16.097Z",
+    "voiceTimeMinutes": 566,
+    "tier": "bronze"
+  },
+  "406021288272986114": {
+    "userId": "406021288272986114",
+    "balance": 169,
+    "totalEarned": 169,
+    "lastActive": "2025-11-07T10:39:26.154Z",
+    "voiceTimeMinutes": 5672,
+    "tier": "bronze"
+  },
+  "880837288836345908": {
+    "userId": "880837288836345908",
+    "balance": 34,
+    "totalEarned": 34,
+    "lastActive": "2025-11-03T06:45:18.696Z",
+    "voiceTimeMinutes": 876,
+    "tier": "bronze"
+  },
+  "970439958412292158": {
+    "userId": "970439958412292158",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-11-04T00:51:04.267Z",
+    "voiceTimeMinutes": 217,
+    "tier": "bronze"
+  },
+  "1253852917237026990": {
+    "userId": "1253852917237026990",
+    "balance": 100,
+    "totalEarned": 100,
+    "lastActive": "2025-11-02T22:10:27.968Z",
+    "voiceTimeMinutes": 2653,
+    "tier": "bronze"
+  },
+  "588011787056709652": {
+    "userId": "588011787056709652",
+    "balance": 3023,
+    "totalEarned": 3023,
+    "lastActive": "2025-11-07T19:25:12.797Z",
+    "voiceTimeMinutes": 81503,
+    "tier": "bronze"
+  },
+  "324175599356739584": {
+    "userId": "324175599356739584",
+    "balance": 19,
+    "totalEarned": 19,
+    "lastActive": "2025-10-30T10:33:47.338Z",
+    "voiceTimeMinutes": 1791,
+    "tier": "bronze"
+  },
+  "826562711911137290": {
+    "userId": "826562711911137290",
+    "balance": 78,
+    "totalEarned": 78,
+    "lastActive": "2025-10-26T20:12:22.051Z",
+    "voiceTimeMinutes": 496,
+    "tier": "bronze"
+  },
+  "532967603929481261": {
+    "userId": "532967603929481261",
+    "balance": 81,
+    "totalEarned": 81,
+    "lastActive": "2025-11-06T19:21:08.955Z",
+    "voiceTimeMinutes": 1286,
+    "tier": "bronze"
+  },
+  "201872867258925058": {
+    "userId": "201872867258925058",
+    "balance": 105,
+    "totalEarned": 105,
+    "lastActive": "2025-11-05T11:41:13.143Z",
+    "voiceTimeMinutes": 4604,
+    "tier": "bronze"
+  },
+  "714866050101018715": {
+    "userId": "714866050101018715",
+    "balance": 5,
+    "totalEarned": 5,
+    "lastActive": "2025-11-05T21:59:19.654Z",
+    "voiceTimeMinutes": 680,
+    "tier": "bronze"
+  },
+  "1065452833731772416": {
+    "userId": "1065452833731772416",
+    "balance": 363,
+    "totalEarned": 363,
+    "lastActive": "2025-11-01T11:20:16.540Z",
+    "voiceTimeMinutes": 409,
+    "tier": "bronze"
+  },
+  "654468725314945046": {
+    "userId": "654468725314945046",
+    "balance": 167,
+    "totalEarned": 167,
+    "lastActive": "2025-11-06T01:17:06.881Z",
+    "voiceTimeMinutes": 8997,
+    "tier": "bronze"
+  },
+  "1024299349129302106": {
+    "userId": "1024299349129302106",
+    "balance": 583,
+    "totalEarned": 583,
+    "lastActive": "2025-11-02T00:25:41.692Z",
+    "voiceTimeMinutes": 90490,
+    "tier": "bronze"
+  },
+  "822793669718310984": {
+    "userId": "822793669718310984",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-11-03T10:53:19.366Z",
+    "voiceTimeMinutes": 1744,
+    "tier": "bronze"
+  },
+  "1376773357298647140": {
+    "userId": "1376773357298647140",
+    "balance": 52,
+    "totalEarned": 52,
+    "lastActive": "2025-11-03T12:48:42.591Z",
+    "voiceTimeMinutes": 93,
+    "tier": "bronze"
+  },
+  "450954560177963008": {
+    "userId": "450954560177963008",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-10-28T16:23:57.237Z",
+    "voiceTimeMinutes": 417,
+    "tier": "bronze"
+  },
+  "1349907087035076608": {
+    "userId": "1349907087035076608",
+    "balance": 159,
+    "totalEarned": 159,
+    "lastActive": "2025-11-07T14:57:43.317Z",
+    "voiceTimeMinutes": 284,
+    "tier": "bronze"
+  },
+  "822327328377667606": {
+    "userId": "822327328377667606",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-10-26T20:15:19.236Z",
+    "voiceTimeMinutes": 1260,
+    "tier": "bronze"
+  },
+  "1065130039441641482": {
+    "userId": "1065130039441641482",
+    "balance": 262,
+    "totalEarned": 262,
+    "lastActive": "2025-11-05T22:14:11.202Z",
+    "voiceTimeMinutes": 6368,
+    "tier": "bronze"
+  },
+  "829231236937154583": {
+    "userId": "829231236937154583",
+    "balance": 394,
+    "totalEarned": 394,
+    "lastActive": "2025-10-29T08:09:38.910Z",
+    "voiceTimeMinutes": 460,
+    "tier": "bronze"
+  },
+  "1189389286177517704": {
+    "userId": "1189389286177517704",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-10-26T20:49:38.756Z",
+    "voiceTimeMinutes": 494,
+    "tier": "bronze"
+  },
+  "324425696913129472": {
+    "userId": "324425696913129472",
+    "balance": 293,
+    "totalEarned": 293,
+    "lastActive": "2025-11-06T05:44:53.111Z",
+    "voiceTimeMinutes": 22838,
+    "tier": "bronze"
+  },
+  "200666250983112704": {
+    "userId": "200666250983112704",
+    "balance": 308,
+    "totalEarned": 308,
+    "lastActive": "2025-11-03T05:43:41.715Z",
+    "voiceTimeMinutes": 12791,
+    "tier": "bronze"
+  },
+  "1262899221523202150": {
+    "userId": "1262899221523202150",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-10-31T17:35:21.435Z",
+    "voiceTimeMinutes": 199,
+    "tier": "bronze"
+  },
+  "1362274618953699370": {
+    "userId": "1362274618953699370",
+    "balance": 626,
+    "totalEarned": 626,
+    "lastActive": "2025-11-07T06:29:24.211Z",
+    "voiceTimeMinutes": 2772,
+    "tier": "bronze"
+  },
+  "880819003713536021": {
+    "userId": "880819003713536021",
+    "balance": 90,
+    "totalEarned": 90,
+    "lastActive": "2025-11-05T02:17:53.041Z",
+    "voiceTimeMinutes": 286,
+    "tier": "bronze"
+  },
+  "1429251010357891164": {
+    "userId": "1429251010357891164",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-04T23:34:53.545Z",
+    "voiceTimeMinutes": 49,
+    "tier": "bronze"
+  },
+  "166297493192179712": {
+    "userId": "166297493192179712",
+    "balance": 10,
+    "totalEarned": 10,
+    "lastActive": "2025-10-27T04:54:07.137Z",
+    "voiceTimeMinutes": 478,
+    "tier": "bronze"
+  },
+  "889548564076838932": {
+    "userId": "889548564076838932",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-10-27T04:55:24.931Z",
+    "voiceTimeMinutes": 44,
+    "tier": "bronze"
+  },
+  "249964114305089537": {
+    "userId": "249964114305089537",
+    "balance": 11,
+    "totalEarned": 11,
+    "lastActive": "2025-10-28T12:06:22.431Z",
+    "voiceTimeMinutes": 3777,
+    "tier": "bronze"
+  },
+  "1427764802863894711": {
+    "userId": "1427764802863894711",
+    "balance": 71,
+    "totalEarned": 71,
+    "lastActive": "2025-11-01T18:04:42.902Z",
+    "voiceTimeMinutes": 88,
+    "tier": "bronze"
+  },
+  "1273264905667088585": {
+    "userId": "1273264905667088585",
+    "balance": 118,
+    "totalEarned": 118,
+    "lastActive": "2025-11-07T12:52:27.206Z",
+    "voiceTimeMinutes": 4196,
+    "tier": "bronze"
+  },
+  "948188890219544606": {
+    "userId": "948188890219544606",
+    "balance": 22,
+    "totalEarned": 22,
+    "lastActive": "2025-10-29T23:26:36.570Z",
+    "voiceTimeMinutes": 1237,
+    "tier": "bronze"
+  },
+  "201070135577018368": {
+    "userId": "201070135577018368",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-10-27T06:14:38.163Z",
+    "voiceTimeMinutes": 163,
+    "tier": "bronze"
+  },
+  "703312362240868352": {
+    "userId": "703312362240868352",
+    "balance": 4473,
+    "totalEarned": 4473,
+    "lastActive": "2025-11-07T21:02:36.947Z",
+    "voiceTimeMinutes": 170965,
+    "tier": "bronze"
+  },
+  "274416752056598530": {
+    "userId": "274416752056598530",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-10-27T07:00:04.861Z",
+    "voiceTimeMinutes": 330,
+    "tier": "bronze"
+  },
+  "1266876293035593881": {
+    "userId": "1266876293035593881",
+    "balance": 12,
+    "totalEarned": 12,
+    "lastActive": "2025-10-27T07:21:08.629Z",
+    "voiceTimeMinutes": 12,
+    "tier": "bronze"
+  },
+  "259936029597761536": {
+    "userId": "259936029597761536",
+    "balance": 321,
+    "totalEarned": 321,
+    "lastActive": "2025-11-07T07:21:57.763Z",
+    "voiceTimeMinutes": 13082,
+    "tier": "bronze"
+  },
+  "712669720394072115": {
+    "userId": "712669720394072115",
+    "balance": 503,
+    "totalEarned": 503,
+    "lastActive": "2025-11-06T22:28:01.617Z",
+    "voiceTimeMinutes": 1933,
+    "tier": "bronze"
+  },
+  "1226729513468039208": {
+    "userId": "1226729513468039208",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-10-27T08:11:33.061Z",
+    "voiceTimeMinutes": 10052,
+    "tier": "bronze"
+  },
+  "920207602812588042": {
+    "userId": "920207602812588042",
+    "balance": 360,
+    "totalEarned": 360,
+    "lastActive": "2025-11-07T18:55:13.768Z",
+    "voiceTimeMinutes": 1556,
+    "tier": "bronze"
+  },
+  "1244361166772502588": {
+    "userId": "1244361166772502588",
+    "balance": 91,
+    "totalEarned": 91,
+    "lastActive": "2025-11-05T18:48:11.174Z",
+    "voiceTimeMinutes": 1488,
+    "tier": "bronze"
+  },
+  "1402478865208574103": {
+    "userId": "1402478865208574103",
+    "balance": 8,
+    "totalEarned": 8,
+    "lastActive": "2025-10-27T09:50:22.434Z",
+    "voiceTimeMinutes": 976,
+    "tier": "bronze"
+  },
+  "869601612140797993": {
+    "userId": "869601612140797993",
+    "balance": 275,
+    "totalEarned": 275,
+    "lastActive": "2025-11-07T15:27:09.670Z",
+    "voiceTimeMinutes": 1105,
+    "tier": "bronze"
+  },
+  "1397836097421181012": {
+    "userId": "1397836097421181012",
+    "balance": 117,
+    "totalEarned": 117,
+    "lastActive": "2025-11-07T12:49:43.049Z",
+    "voiceTimeMinutes": 2436,
+    "tier": "bronze"
+  },
+  "762617863805861919": {
+    "userId": "762617863805861919",
+    "balance": 22,
+    "totalEarned": 22,
+    "lastActive": "2025-11-06T22:02:50.807Z",
+    "voiceTimeMinutes": 7911,
+    "tier": "bronze"
+  },
+  "271816217600327681": {
+    "userId": "271816217600327681",
+    "balance": 98,
+    "totalEarned": 98,
+    "lastActive": "2025-11-07T19:15:57.106Z",
+    "voiceTimeMinutes": 1272,
+    "tier": "bronze"
+  },
+  "471860850622464011": {
+    "userId": "471860850622464011",
+    "balance": 59,
+    "totalEarned": 59,
+    "lastActive": "2025-10-30T14:57:53.480Z",
+    "voiceTimeMinutes": 7676,
+    "tier": "bronze"
+  },
+  "253756980362084353": {
+    "userId": "253756980362084353",
+    "balance": 620,
+    "totalEarned": 620,
+    "lastActive": "2025-11-07T18:17:53.363Z",
+    "voiceTimeMinutes": 6797,
+    "tier": "bronze"
+  },
+  "289192363102961664": {
+    "userId": "289192363102961664",
+    "balance": 200,
+    "totalEarned": 200,
+    "lastActive": "2025-11-07T14:10:50.648Z",
+    "voiceTimeMinutes": 8486,
+    "tier": "bronze"
+  },
+  "128395603645431810": {
+    "userId": "128395603645431810",
+    "balance": 12,
+    "totalEarned": 12,
+    "lastActive": "2025-10-31T18:12:04.180Z",
+    "voiceTimeMinutes": 18216,
+    "tier": "bronze"
+  },
+  "133735866295255042": {
+    "userId": "133735866295255042",
+    "balance": 32,
+    "totalEarned": 32,
+    "lastActive": "2025-11-05T12:42:08.285Z",
+    "voiceTimeMinutes": 1513,
+    "tier": "bronze"
+  },
+  "121810924528074753": {
+    "userId": "121810924528074753",
+    "balance": 113,
+    "totalEarned": 113,
+    "lastActive": "2025-11-07T06:31:12.068Z",
+    "voiceTimeMinutes": 2699,
+    "tier": "bronze"
+  },
+  "152420025725222913": {
+    "userId": "152420025725222913",
+    "balance": 377,
+    "totalEarned": 377,
+    "lastActive": "2025-11-07T16:50:17.860Z",
+    "voiceTimeMinutes": 5621,
+    "tier": "bronze"
+  },
+  "235667242354868235": {
+    "userId": "235667242354868235",
+    "balance": 663,
+    "totalEarned": 663,
+    "lastActive": "2025-11-05T11:45:48.438Z",
+    "voiceTimeMinutes": 1488,
+    "tier": "bronze"
+  },
+  "215235693964820481": {
+    "userId": "215235693964820481",
+    "balance": 1598,
+    "totalEarned": 1598,
+    "lastActive": "2025-11-03T16:32:13.714Z",
+    "voiceTimeMinutes": 27364,
+    "tier": "bronze"
+  },
+  "956158495504355358": {
+    "userId": "956158495504355358",
+    "balance": 12,
+    "totalEarned": 12,
+    "lastActive": "2025-10-30T07:32:11.918Z",
+    "voiceTimeMinutes": 1611,
+    "tier": "bronze"
+  },
+  "812636955296792577": {
+    "userId": "812636955296792577",
+    "balance": 46,
+    "totalEarned": 46,
+    "lastActive": "2025-11-03T03:38:39.672Z",
+    "voiceTimeMinutes": 616,
+    "tier": "bronze"
+  },
+  "349892278678192129": {
+    "userId": "349892278678192129",
+    "balance": 112,
+    "totalEarned": 112,
+    "lastActive": "2025-10-29T14:30:40.503Z",
+    "voiceTimeMinutes": 30997,
+    "tier": "bronze"
+  },
+  "766158459820572692": {
+    "userId": "766158459820572692",
+    "balance": 38,
+    "totalEarned": 38,
+    "lastActive": "2025-11-07T17:31:54.327Z",
+    "voiceTimeMinutes": 36655,
+    "tier": "bronze"
+  },
+  "534498828275941386": {
+    "userId": "534498828275941386",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-11-07T06:57:01.578Z",
+    "voiceTimeMinutes": 21280,
+    "tier": "bronze"
+  },
+  "99381377018888192": {
+    "userId": "99381377018888192",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-10-29T07:41:53.364Z",
+    "voiceTimeMinutes": 461,
+    "tier": "bronze"
+  },
+  "782478635021107220": {
+    "userId": "782478635021107220",
+    "balance": 415,
+    "totalEarned": 415,
+    "lastActive": "2025-11-06T05:08:25.587Z",
+    "voiceTimeMinutes": 4884,
+    "tier": "bronze"
+  },
+  "1379313182752903289": {
+    "userId": "1379313182752903289",
+    "balance": 35,
+    "totalEarned": 35,
+    "lastActive": "2025-11-07T10:45:57.251Z",
+    "voiceTimeMinutes": 1495,
+    "tier": "bronze"
+  },
+  "698223707029504000": {
+    "userId": "698223707029504000",
+    "balance": 190,
+    "totalEarned": 190,
+    "lastActive": "2025-11-02T04:35:47.072Z",
+    "voiceTimeMinutes": 2520,
+    "tier": "bronze"
+  },
+  "1424738826701508701": {
+    "userId": "1424738826701508701",
+    "balance": 1051,
+    "totalEarned": 1051,
+    "lastActive": "2025-10-30T15:22:28.737Z",
+    "voiceTimeMinutes": 2658,
+    "tier": "bronze"
+  },
+  "386302522513555477": {
+    "userId": "386302522513555477",
+    "balance": 21,
+    "totalEarned": 21,
+    "lastActive": "2025-11-05T06:31:57.608Z",
+    "voiceTimeMinutes": 2703,
+    "tier": "bronze"
+  },
+  "209451386767671296": {
+    "userId": "209451386767671296",
+    "balance": 28,
+    "totalEarned": 28,
+    "lastActive": "2025-10-27T23:19:07.772Z",
+    "voiceTimeMinutes": 1383,
+    "tier": "bronze"
+  },
+  "203645941385789441": {
+    "userId": "203645941385789441",
+    "balance": 73,
+    "totalEarned": 73,
+    "lastActive": "2025-11-02T00:28:11.599Z",
+    "voiceTimeMinutes": 7316,
+    "tier": "bronze"
+  },
+  "554394309378703370": {
+    "userId": "554394309378703370",
+    "balance": 195,
+    "totalEarned": 195,
+    "lastActive": "2025-11-07T09:44:15.552Z",
+    "voiceTimeMinutes": 11927,
+    "tier": "bronze"
+  },
+  "185215293075750912": {
+    "userId": "185215293075750912",
+    "balance": 14,
+    "totalEarned": 14,
+    "lastActive": "2025-11-05T21:26:51.302Z",
+    "voiceTimeMinutes": 804,
+    "tier": "bronze"
+  },
+  "695043865555501057": {
+    "userId": "695043865555501057",
+    "balance": 28,
+    "totalEarned": 28,
+    "lastActive": "2025-11-07T14:52:09.417Z",
+    "voiceTimeMinutes": 2956,
+    "tier": "bronze"
+  },
+  "1403247083657625681": {
+    "userId": "1403247083657625681",
+    "balance": 61,
+    "totalEarned": 61,
+    "lastActive": "2025-11-05T09:48:06.464Z",
+    "voiceTimeMinutes": 117,
+    "tier": "bronze"
+  },
+  "679382185110929468": {
+    "userId": "679382185110929468",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-10-28T04:58:19.981Z",
+    "voiceTimeMinutes": 188,
+    "tier": "bronze"
+  },
+  "1030016136735100928": {
+    "userId": "1030016136735100928",
+    "balance": 380,
+    "totalEarned": 380,
+    "lastActive": "2025-10-29T17:45:34.579Z",
+    "voiceTimeMinutes": 21788,
+    "tier": "bronze"
+  },
+  "284245001393668096": {
+    "userId": "284245001393668096",
+    "balance": 208,
+    "totalEarned": 208,
+    "lastActive": "2025-11-04T13:11:28.406Z",
+    "voiceTimeMinutes": 22268,
+    "tier": "bronze"
+  },
+  "529509402965835776": {
+    "userId": "529509402965835776",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-10-28T06:10:19.083Z",
+    "voiceTimeMinutes": 8736,
+    "tier": "bronze"
+  },
+  "1260054763815571578": {
+    "userId": "1260054763815571578",
+    "balance": 59,
+    "totalEarned": 59,
+    "lastActive": "2025-11-07T11:27:39.380Z",
+    "voiceTimeMinutes": 5562,
+    "tier": "bronze"
+  },
+  "1384677464961192007": {
+    "userId": "1384677464961192007",
+    "balance": 30,
+    "totalEarned": 30,
+    "lastActive": "2025-11-03T05:13:37.863Z",
+    "voiceTimeMinutes": 145,
+    "tier": "bronze"
+  },
+  "1417110022873419787": {
+    "userId": "1417110022873419787",
+    "balance": 56,
+    "totalEarned": 56,
+    "lastActive": "2025-11-01T09:09:42.771Z",
+    "voiceTimeMinutes": 223,
+    "tier": "bronze"
+  },
+  "829188923070742548": {
+    "userId": "829188923070742548",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-10-28T10:12:06.494Z",
+    "voiceTimeMinutes": 299,
+    "tier": "bronze"
+  },
+  "1136920735596687440": {
+    "userId": "1136920735596687440",
+    "balance": 304,
+    "totalEarned": 304,
+    "lastActive": "2025-11-07T07:55:19.503Z",
+    "voiceTimeMinutes": 3497,
+    "tier": "bronze"
+  },
+  "1302473183999299695": {
+    "userId": "1302473183999299695",
+    "balance": 138,
+    "totalEarned": 138,
+    "lastActive": "2025-10-31T03:35:09.539Z",
+    "voiceTimeMinutes": 9848,
+    "tier": "bronze"
+  },
+  "1280910289717559399": {
+    "userId": "1280910289717559399",
+    "balance": 147,
+    "totalEarned": 147,
+    "lastActive": "2025-11-06T23:46:14.185Z",
+    "voiceTimeMinutes": 4437,
+    "tier": "bronze"
+  },
+  "545805851462467614": {
+    "userId": "545805851462467614",
+    "balance": 5,
+    "totalEarned": 5,
+    "lastActive": "2025-10-28T12:38:35.630Z",
+    "voiceTimeMinutes": 381,
+    "tier": "bronze"
+  },
+  "827795901547675689": {
+    "userId": "827795901547675689",
+    "balance": 44,
+    "totalEarned": 44,
+    "lastActive": "2025-11-07T11:46:29.700Z",
+    "voiceTimeMinutes": 5776,
+    "tier": "bronze"
+  },
+  "891022428011126835": {
+    "userId": "891022428011126835",
+    "balance": 601,
+    "totalEarned": 601,
+    "lastActive": "2025-10-31T23:35:15.696Z",
+    "voiceTimeMinutes": 13406,
+    "tier": "bronze"
+  },
+  "1114690946215448607": {
+    "userId": "1114690946215448607",
+    "balance": 166,
+    "totalEarned": 166,
+    "lastActive": "2025-11-06T20:51:22.457Z",
+    "voiceTimeMinutes": 3203,
+    "tier": "bronze"
+  },
+  "1245704315234942976": {
+    "userId": "1245704315234942976",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-10-28T16:34:12.213Z",
+    "voiceTimeMinutes": 11545,
+    "tier": "bronze"
+  },
+  "1005895837471215726": {
+    "userId": "1005895837471215726",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-10-28T17:09:05.226Z",
+    "voiceTimeMinutes": 214,
+    "tier": "bronze"
+  },
+  "778719049143025664": {
+    "userId": "778719049143025664",
+    "balance": 358,
+    "totalEarned": 358,
+    "lastActive": "2025-11-07T18:22:53.595Z",
+    "voiceTimeMinutes": 73310,
+    "tier": "bronze"
+  },
+  "392844791760683018": {
+    "userId": "392844791760683018",
+    "balance": 92,
+    "totalEarned": 92,
+    "lastActive": "2025-11-07T07:41:55.585Z",
+    "voiceTimeMinutes": 2842,
+    "tier": "bronze"
+  },
+  "369915968350191616": {
+    "userId": "369915968350191616",
+    "balance": 22,
+    "totalEarned": 22,
+    "lastActive": "2025-10-31T21:08:01.109Z",
+    "voiceTimeMinutes": 796,
+    "tier": "bronze"
+  },
+  "331138566614810626": {
+    "userId": "331138566614810626",
+    "balance": 229,
+    "totalEarned": 229,
+    "lastActive": "2025-11-07T11:35:02.097Z",
+    "voiceTimeMinutes": 833,
+    "tier": "bronze"
+  },
+  "517687871520636928": {
+    "userId": "517687871520636928",
+    "balance": 291,
+    "totalEarned": 291,
+    "lastActive": "2025-11-07T11:20:51.701Z",
+    "voiceTimeMinutes": 38671,
+    "tier": "bronze"
+  },
+  "833838867416350761": {
+    "userId": "833838867416350761",
+    "balance": 149,
+    "totalEarned": 149,
+    "lastActive": "2025-11-02T01:31:33.795Z",
+    "voiceTimeMinutes": 9919,
+    "tier": "bronze"
+  },
+  "325192723852296192": {
+    "userId": "325192723852296192",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-10-28T21:57:44.086Z",
+    "voiceTimeMinutes": 7,
+    "tier": "bronze"
+  },
+  "583475571560808448": {
+    "userId": "583475571560808448",
+    "balance": 600,
+    "totalEarned": 600,
+    "lastActive": "2025-11-07T16:52:19.810Z",
+    "voiceTimeMinutes": 2334,
+    "tier": "bronze"
+  },
+  "424850412567527434": {
+    "userId": "424850412567527434",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-11-06T12:33:56.815Z",
+    "voiceTimeMinutes": 73,
+    "tier": "bronze"
+  },
+  "1169009998567850056": {
+    "userId": "1169009998567850056",
+    "balance": 27,
+    "totalEarned": 27,
+    "lastActive": "2025-10-28T23:36:26.514Z",
+    "voiceTimeMinutes": 122,
+    "tier": "bronze"
+  },
+  "198644641149616128": {
+    "userId": "198644641149616128",
+    "balance": 178,
+    "totalEarned": 178,
+    "lastActive": "2025-11-06T05:02:15.848Z",
+    "voiceTimeMinutes": 1564,
+    "tier": "bronze"
+  },
+  "365951648583122944": {
+    "userId": "365951648583122944",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-10-28T23:35:05.878Z",
+    "voiceTimeMinutes": 1117,
+    "tier": "bronze"
+  },
+  "894950079495045120": {
+    "userId": "894950079495045120",
+    "balance": 31,
+    "totalEarned": 31,
+    "lastActive": "2025-10-29T00:31:36.464Z",
+    "voiceTimeMinutes": 3246,
+    "tier": "bronze"
+  },
+  "173153228207161344": {
+    "userId": "173153228207161344",
+    "balance": 1038,
+    "totalEarned": 1038,
+    "lastActive": "2025-11-07T13:34:12.188Z",
+    "voiceTimeMinutes": 18284,
+    "tier": "bronze"
+  },
+  "185912112986587137": {
+    "userId": "185912112986587137",
+    "balance": 570,
+    "totalEarned": 570,
+    "lastActive": "2025-11-03T21:20:27.658Z",
+    "voiceTimeMinutes": 76162,
+    "tier": "bronze"
+  },
+  "1375042083399930007": {
+    "userId": "1375042083399930007",
+    "balance": 274,
+    "totalEarned": 274,
+    "lastActive": "2025-11-06T23:11:08.818Z",
+    "voiceTimeMinutes": 423,
+    "tier": "bronze"
+  },
+  "273560702780833792": {
+    "userId": "273560702780833792",
+    "balance": 10,
+    "totalEarned": 10,
+    "lastActive": "2025-10-29T06:56:42.762Z",
+    "voiceTimeMinutes": 25,
+    "tier": "bronze"
+  },
+  "971188491553742938": {
+    "userId": "971188491553742938",
+    "balance": 52,
+    "totalEarned": 52,
+    "lastActive": "2025-10-29T08:09:13.992Z",
+    "voiceTimeMinutes": 278,
+    "tier": "bronze"
+  },
+  "1358316775435014185": {
+    "userId": "1358316775435014185",
+    "balance": 47,
+    "totalEarned": 47,
+    "lastActive": "2025-10-29T13:22:34.066Z",
+    "voiceTimeMinutes": 47,
+    "tier": "bronze"
+  },
+  "373896694644998156": {
+    "userId": "373896694644998156",
+    "balance": 129,
+    "totalEarned": 129,
+    "lastActive": "2025-11-02T03:08:05.217Z",
+    "voiceTimeMinutes": 34234,
+    "tier": "bronze"
+  },
+  "850527680944013394": {
+    "userId": "850527680944013394",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-10-30T18:37:43.707Z",
+    "voiceTimeMinutes": 17,
+    "tier": "bronze"
+  },
+  "1400725239721234493": {
+    "userId": "1400725239721234493",
+    "balance": 164,
+    "totalEarned": 164,
+    "lastActive": "2025-10-30T22:59:56.943Z",
+    "voiceTimeMinutes": 264,
+    "tier": "bronze"
+  },
+  "1408948357053026445": {
+    "userId": "1408948357053026445",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-10-29T18:19:54.912Z",
+    "voiceTimeMinutes": 55,
+    "tier": "bronze"
+  },
+  "194900871614693376": {
+    "userId": "194900871614693376",
+    "balance": 23,
+    "totalEarned": 23,
+    "lastActive": "2025-10-29T21:22:24.096Z",
+    "voiceTimeMinutes": 23,
+    "tier": "bronze"
+  },
+  "1431363992709894387": {
+    "userId": "1431363992709894387",
+    "balance": 17,
+    "totalEarned": 17,
+    "lastActive": "2025-11-03T23:07:54.567Z",
+    "voiceTimeMinutes": 17,
+    "tier": "bronze"
+  },
+  "1424073952984039567": {
+    "userId": "1424073952984039567",
+    "balance": 1011,
+    "totalEarned": 1011,
+    "lastActive": "2025-11-07T21:02:18.036Z",
+    "voiceTimeMinutes": 3254,
+    "tier": "bronze"
+  },
+  "1427479858505846894": {
+    "userId": "1427479858505846894",
+    "balance": 51,
+    "totalEarned": 51,
+    "lastActive": "2025-11-03T01:05:52.439Z",
+    "voiceTimeMinutes": 51,
+    "tier": "bronze"
+  },
+  "443543735100375041": {
+    "userId": "443543735100375041",
+    "balance": 29,
+    "totalEarned": 29,
+    "lastActive": "2025-10-29T22:54:14.868Z",
+    "voiceTimeMinutes": 308,
+    "tier": "bronze"
+  },
+  "354543127450615808": {
+    "userId": "354543127450615808",
+    "balance": 236,
+    "totalEarned": 236,
+    "lastActive": "2025-11-07T17:15:43.277Z",
+    "voiceTimeMinutes": 9567,
+    "tier": "bronze"
+  },
+  "892254894193516594": {
+    "userId": "892254894193516594",
+    "balance": 19,
+    "totalEarned": 19,
+    "lastActive": "2025-11-01T19:19:32.818Z",
+    "voiceTimeMinutes": 19,
+    "tier": "bronze"
+  },
+  "532377763332489234": {
+    "userId": "532377763332489234",
+    "balance": 462,
+    "totalEarned": 462,
+    "lastActive": "2025-11-05T03:52:17.978Z",
+    "voiceTimeMinutes": 5831,
+    "tier": "bronze"
+  },
+  "401146110019895330": {
+    "userId": "401146110019895330",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-11-02T18:43:41.751Z",
+    "voiceTimeMinutes": 23,
+    "tier": "bronze"
+  },
+  "120362642945736706": {
+    "userId": "120362642945736706",
+    "balance": 118,
+    "totalEarned": 118,
+    "lastActive": "2025-10-30T06:31:15.023Z",
+    "voiceTimeMinutes": 5065,
+    "tier": "bronze"
+  },
+  "1047311091421679636": {
+    "userId": "1047311091421679636",
+    "balance": 112,
+    "totalEarned": 112,
+    "lastActive": "2025-10-30T06:39:19.420Z",
+    "voiceTimeMinutes": 5981,
+    "tier": "bronze"
+  },
+  "476132218859945984": {
+    "userId": "476132218859945984",
+    "balance": 16,
+    "totalEarned": 16,
+    "lastActive": "2025-10-30T10:55:02.624Z",
+    "voiceTimeMinutes": 48,
+    "tier": "bronze"
+  },
+  "633812870341197863": {
+    "userId": "633812870341197863",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-10-30T05:29:51.599Z",
+    "voiceTimeMinutes": 228,
+    "tier": "bronze"
+  },
+  "1023636959882661939": {
+    "userId": "1023636959882661939",
+    "balance": 97,
+    "totalEarned": 97,
+    "lastActive": "2025-10-30T07:11:25.085Z",
+    "voiceTimeMinutes": 1477,
+    "tier": "bronze"
+  },
+  "634676865227030548": {
+    "userId": "634676865227030548",
+    "balance": 15,
+    "totalEarned": 15,
+    "lastActive": "2025-10-30T06:25:51.162Z",
+    "voiceTimeMinutes": 1038,
+    "tier": "bronze"
+  },
+  "305504947242270721": {
+    "userId": "305504947242270721",
+    "balance": 97,
+    "totalEarned": 97,
+    "lastActive": "2025-11-03T06:46:08.631Z",
+    "voiceTimeMinutes": 97,
+    "tier": "bronze"
+  },
+  "144996927577128962": {
+    "userId": "144996927577128962",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-10-30T06:42:01.910Z",
+    "voiceTimeMinutes": 4781,
+    "tier": "bronze"
+  },
+  "410643627648483328": {
+    "userId": "410643627648483328",
+    "balance": 60,
+    "totalEarned": 60,
+    "lastActive": "2025-11-07T02:23:46.803Z",
+    "voiceTimeMinutes": 1778,
+    "tier": "bronze"
+  },
+  "1129985489861087293": {
+    "userId": "1129985489861087293",
+    "balance": 12,
+    "totalEarned": 12,
+    "lastActive": "2025-11-01T19:34:45.247Z",
+    "voiceTimeMinutes": 2084,
+    "tier": "bronze"
+  },
+  "203081703487438848": {
+    "userId": "203081703487438848",
+    "balance": 25,
+    "totalEarned": 25,
+    "lastActive": "2025-11-01T07:48:07.626Z",
+    "voiceTimeMinutes": 25,
+    "tier": "bronze"
+  },
+  "80104196849803264": {
+    "userId": "80104196849803264",
+    "balance": 30,
+    "totalEarned": 30,
+    "lastActive": "2025-11-05T11:49:52.707Z",
+    "voiceTimeMinutes": 84,
+    "tier": "bronze"
+  },
+  "730525279524749445": {
+    "userId": "730525279524749445",
+    "balance": 106,
+    "totalEarned": 106,
+    "lastActive": "2025-11-06T07:02:22.750Z",
+    "voiceTimeMinutes": 106,
+    "tier": "bronze"
+  },
+  "824396574292967485": {
+    "userId": "824396574292967485",
+    "balance": 24,
+    "totalEarned": 24,
+    "lastActive": "2025-11-02T11:37:28.837Z",
+    "voiceTimeMinutes": 4339,
+    "tier": "bronze"
+  },
+  "855008393819324456": {
+    "userId": "855008393819324456",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-11-01T18:33:24.642Z",
+    "voiceTimeMinutes": 324,
+    "tier": "bronze"
+  },
+  "100344302814646272": {
+    "userId": "100344302814646272",
+    "balance": 23,
+    "totalEarned": 23,
+    "lastActive": "2025-11-02T06:17:39.740Z",
+    "voiceTimeMinutes": 794,
+    "tier": "bronze"
+  },
+  "512094910367924235": {
+    "userId": "512094910367924235",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-10-30T11:38:17.439Z",
+    "voiceTimeMinutes": 449,
+    "tier": "bronze"
+  },
+  "1128978341903487066": {
+    "userId": "1128978341903487066",
+    "balance": 8,
+    "totalEarned": 8,
+    "lastActive": "2025-10-30T13:20:53.815Z",
+    "voiceTimeMinutes": 8,
+    "tier": "bronze"
+  },
+  "1309453773835603978": {
+    "userId": "1309453773835603978",
+    "balance": 31,
+    "totalEarned": 31,
+    "lastActive": "2025-10-30T13:43:44.335Z",
+    "voiceTimeMinutes": 4202,
+    "tier": "bronze"
+  },
+  "249327145757835264": {
+    "userId": "249327145757835264",
+    "balance": 457,
+    "totalEarned": 457,
+    "lastActive": "2025-11-03T08:24:22.794Z",
+    "voiceTimeMinutes": 479,
+    "tier": "bronze"
+  },
+  "247522193586520073": {
+    "userId": "247522193586520073",
+    "balance": 46,
+    "totalEarned": 46,
+    "lastActive": "2025-11-06T02:44:35.402Z",
+    "voiceTimeMinutes": 11736,
+    "tier": "bronze"
+  },
+  "1397576777790132226": {
+    "userId": "1397576777790132226",
+    "balance": 257,
+    "totalEarned": 257,
+    "lastActive": "2025-11-07T15:26:25.517Z",
+    "voiceTimeMinutes": 790,
+    "tier": "bronze"
+  },
+  "684707976526692393": {
+    "userId": "684707976526692393",
+    "balance": 37,
+    "totalEarned": 37,
+    "lastActive": "2025-11-01T02:22:03.359Z",
+    "voiceTimeMinutes": 202,
+    "tier": "bronze"
+  },
+  "1185429191504691230": {
+    "userId": "1185429191504691230",
+    "balance": 5,
+    "totalEarned": 5,
+    "lastActive": "2025-10-30T18:37:15.240Z",
+    "voiceTimeMinutes": 102,
+    "tier": "bronze"
+  },
+  "1276608041881567287": {
+    "userId": "1276608041881567287",
+    "balance": 839,
+    "totalEarned": 839,
+    "lastActive": "2025-11-02T00:04:03.105Z",
+    "voiceTimeMinutes": 4424,
+    "tier": "bronze"
+  },
+  "1192217388607864952": {
+    "userId": "1192217388607864952",
+    "balance": 30,
+    "totalEarned": 30,
+    "lastActive": "2025-10-31T18:22:51.703Z",
+    "voiceTimeMinutes": 30,
+    "tier": "bronze"
+  },
+  "1122276341685960834": {
+    "userId": "1122276341685960834",
+    "balance": 835,
+    "totalEarned": 835,
+    "lastActive": "2025-11-01T17:11:39.871Z",
+    "voiceTimeMinutes": 11711,
+    "tier": "bronze"
+  },
+  "312684640278151178": {
+    "userId": "312684640278151178",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-10-30T23:25:11.883Z",
+    "voiceTimeMinutes": 7,
+    "tier": "bronze"
+  },
+  "1223819466559979643": {
+    "userId": "1223819466559979643",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-10-31T00:20:26.566Z",
+    "voiceTimeMinutes": 425,
+    "tier": "bronze"
+  },
+  "1022920675712847964": {
+    "userId": "1022920675712847964",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-10-31T02:15:57.227Z",
+    "voiceTimeMinutes": 13,
+    "tier": "bronze"
+  },
+  "152988353489272832": {
+    "userId": "152988353489272832",
+    "balance": 24,
+    "totalEarned": 24,
+    "lastActive": "2025-10-31T22:01:00.821Z",
+    "voiceTimeMinutes": 71,
+    "tier": "bronze"
+  },
+  "420092161481113600": {
+    "userId": "420092161481113600",
+    "balance": 24,
+    "totalEarned": 24,
+    "lastActive": "2025-10-31T07:06:21.856Z",
+    "voiceTimeMinutes": 1412,
+    "tier": "bronze"
+  },
+  "1024180554050043934": {
+    "userId": "1024180554050043934",
+    "balance": 61,
+    "totalEarned": 61,
+    "lastActive": "2025-10-31T08:19:38.772Z",
+    "voiceTimeMinutes": 4237,
+    "tier": "bronze"
+  },
+  "1293307903939444871": {
+    "userId": "1293307903939444871",
+    "balance": 533,
+    "totalEarned": 533,
+    "lastActive": "2025-11-07T19:16:53.374Z",
+    "voiceTimeMinutes": 1589,
+    "tier": "bronze"
+  },
+  "872267194929676358": {
+    "userId": "872267194929676358",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-11-07T10:11:01.296Z",
+    "voiceTimeMinutes": 4107,
+    "tier": "bronze"
+  },
+  "1046980614944981046": {
+    "userId": "1046980614944981046",
+    "balance": 541,
+    "totalEarned": 541,
+    "lastActive": "2025-11-06T12:15:12.220Z",
+    "voiceTimeMinutes": 15048,
+    "tier": "bronze"
+  },
+  "1073084302532825108": {
+    "userId": "1073084302532825108",
+    "balance": 19,
+    "totalEarned": 19,
+    "lastActive": "2025-11-03T11:21:27.423Z",
+    "voiceTimeMinutes": 509,
+    "tier": "bronze"
+  },
+  "247161007665840139": {
+    "userId": "247161007665840139",
+    "balance": 150,
+    "totalEarned": 150,
+    "lastActive": "2025-11-07T11:42:13.822Z",
+    "voiceTimeMinutes": 5733,
+    "tier": "bronze"
+  },
+  "1122708105478815794": {
+    "userId": "1122708105478815794",
+    "balance": 49,
+    "totalEarned": 49,
+    "lastActive": "2025-11-05T07:16:06.833Z",
+    "voiceTimeMinutes": 153,
+    "tier": "bronze"
+  },
+  "615808108283035649": {
+    "userId": "615808108283035649",
+    "balance": 14,
+    "totalEarned": 14,
+    "lastActive": "2025-11-06T20:58:42.724Z",
+    "voiceTimeMinutes": 79,
+    "tier": "bronze"
+  },
+  "521660259610132501": {
+    "userId": "521660259610132501",
+    "balance": 544,
+    "totalEarned": 544,
+    "lastActive": "2025-11-05T13:30:23.850Z",
+    "voiceTimeMinutes": 6412,
+    "tier": "bronze"
+  },
+  "488431763992084491": {
+    "userId": "488431763992084491",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-10-31T13:49:24.550Z",
+    "voiceTimeMinutes": 2008,
+    "tier": "bronze"
+  },
+  "651512338255708160": {
+    "userId": "651512338255708160",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-01T13:25:18.962Z",
+    "voiceTimeMinutes": 246,
+    "tier": "bronze"
+  },
+  "1084550852846559322": {
+    "userId": "1084550852846559322",
+    "balance": 202,
+    "totalEarned": 202,
+    "lastActive": "2025-11-07T10:38:36.572Z",
+    "voiceTimeMinutes": 25514,
+    "tier": "bronze"
+  },
+  "1076947239970291782": {
+    "userId": "1076947239970291782",
+    "balance": 40,
+    "totalEarned": 40,
+    "lastActive": "2025-11-07T10:36:52.068Z",
+    "voiceTimeMinutes": 2398,
+    "tier": "bronze"
+  },
+  "1203389897336037386": {
+    "userId": "1203389897336037386",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-11-05T07:13:38.508Z",
+    "voiceTimeMinutes": 481,
+    "tier": "bronze"
+  },
+  "1118301416247799900": {
+    "userId": "1118301416247799900",
+    "balance": 41,
+    "totalEarned": 41,
+    "lastActive": "2025-11-04T23:46:54.613Z",
+    "voiceTimeMinutes": 3060,
+    "tier": "bronze"
+  },
+  "302227040516571138": {
+    "userId": "302227040516571138",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-02T09:56:22.960Z",
+    "voiceTimeMinutes": 2684,
+    "tier": "bronze"
+  },
+  "124695911245938688": {
+    "userId": "124695911245938688",
+    "balance": 51,
+    "totalEarned": 51,
+    "lastActive": "2025-10-31T17:07:41.480Z",
+    "voiceTimeMinutes": 443,
+    "tier": "bronze"
+  },
+  "1242691738985037956": {
+    "userId": "1242691738985037956",
+    "balance": 60,
+    "totalEarned": 60,
+    "lastActive": "2025-10-31T18:35:46.924Z",
+    "voiceTimeMinutes": 819,
+    "tier": "bronze"
+  },
+  "132739519844712448": {
+    "userId": "132739519844712448",
+    "balance": 268,
+    "totalEarned": 268,
+    "lastActive": "2025-10-31T22:22:21.921Z",
+    "voiceTimeMinutes": 15712,
+    "tier": "bronze"
+  },
+  "1277758900199882782": {
+    "userId": "1277758900199882782",
+    "balance": 144,
+    "totalEarned": 144,
+    "lastActive": "2025-11-04T23:36:53.622Z",
+    "voiceTimeMinutes": 1882,
+    "tier": "bronze"
+  },
+  "1290469849524605062": {
+    "userId": "1290469849524605062",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-02T11:50:05.338Z",
+    "voiceTimeMinutes": 39,
+    "tier": "bronze"
+  },
+  "1287454537048658072": {
+    "userId": "1287454537048658072",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-10-31T18:55:34.871Z",
+    "voiceTimeMinutes": 6,
+    "tier": "bronze"
+  },
+  "722884314764804106": {
+    "userId": "722884314764804106",
+    "balance": 35,
+    "totalEarned": 35,
+    "lastActive": "2025-11-06T23:16:25.550Z",
+    "voiceTimeMinutes": 1262,
+    "tier": "bronze"
+  },
+  "1180564565050785915": {
+    "userId": "1180564565050785915",
+    "balance": 32,
+    "totalEarned": 32,
+    "lastActive": "2025-11-05T02:25:22.828Z",
+    "voiceTimeMinutes": 32,
+    "tier": "bronze"
+  },
+  "797599092817264640": {
+    "userId": "797599092817264640",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-11-01T03:05:29.692Z",
+    "voiceTimeMinutes": 12412,
+    "tier": "bronze"
+  },
+  "1376821423334494259": {
+    "userId": "1376821423334494259",
+    "balance": 15,
+    "totalEarned": 15,
+    "lastActive": "2025-11-01T03:15:54.463Z",
+    "voiceTimeMinutes": 1459,
+    "tier": "bronze"
+  },
+  "763236002336342046": {
+    "userId": "763236002336342046",
+    "balance": 35,
+    "totalEarned": 35,
+    "lastActive": "2025-11-03T17:44:32.375Z",
+    "voiceTimeMinutes": 60253,
+    "tier": "bronze"
+  },
+  "344217558834085888": {
+    "userId": "344217558834085888",
+    "balance": 25,
+    "totalEarned": 25,
+    "lastActive": "2025-11-01T04:08:34.167Z",
+    "voiceTimeMinutes": 6597,
+    "tier": "bronze"
+  },
+  "704900326213419009": {
+    "userId": "704900326213419009",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-11-01T04:09:40.803Z",
+    "voiceTimeMinutes": 104,
+    "tier": "bronze"
+  },
+  "949452223719546880": {
+    "userId": "949452223719546880",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-01T13:35:06.404Z",
+    "voiceTimeMinutes": 613,
+    "tier": "bronze"
+  },
+  "888677913283686430": {
+    "userId": "888677913283686430",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-01T04:53:40.041Z",
+    "voiceTimeMinutes": 2,
+    "tier": "bronze"
+  },
+  "110838875160608768": {
+    "userId": "110838875160608768",
+    "balance": 488,
+    "totalEarned": 488,
+    "lastActive": "2025-11-03T23:51:37.561Z",
+    "voiceTimeMinutes": 488,
+    "tier": "bronze"
+  },
+  "1419680168456355931": {
+    "userId": "1419680168456355931",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-01T05:47:39.643Z",
+    "voiceTimeMinutes": 2,
+    "tier": "bronze"
+  },
+  "1315513344895221783": {
+    "userId": "1315513344895221783",
+    "balance": 14,
+    "totalEarned": 14,
+    "lastActive": "2025-11-01T09:30:52.352Z",
+    "voiceTimeMinutes": 215,
+    "tier": "bronze"
+  },
+  "1252615702775332932": {
+    "userId": "1252615702775332932",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-11-01T10:32:00.830Z",
+    "voiceTimeMinutes": 319,
+    "tier": "bronze"
+  },
+  "1197003307005251674": {
+    "userId": "1197003307005251674",
+    "balance": 312,
+    "totalEarned": 312,
+    "lastActive": "2025-11-03T01:43:06.479Z",
+    "voiceTimeMinutes": 562,
+    "tier": "bronze"
+  },
+  "197389502338039808": {
+    "userId": "197389502338039808",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-11-01T11:19:50.122Z",
+    "voiceTimeMinutes": 868,
+    "tier": "bronze"
+  },
+  "742641380979114017": {
+    "userId": "742641380979114017",
+    "balance": 33,
+    "totalEarned": 33,
+    "lastActive": "2025-11-03T11:54:49.901Z",
+    "voiceTimeMinutes": 131,
+    "tier": "bronze"
+  },
+  "966511142027530330": {
+    "userId": "966511142027530330",
+    "balance": 40,
+    "totalEarned": 40,
+    "lastActive": "2025-11-01T12:22:26.926Z",
+    "voiceTimeMinutes": 1624,
+    "tier": "bronze"
+  },
+  "908454381035339776": {
+    "userId": "908454381035339776",
+    "balance": 1626,
+    "totalEarned": 1626,
+    "lastActive": "2025-11-07T14:59:42.110Z",
+    "voiceTimeMinutes": 241122,
+    "tier": "bronze"
+  },
+  "1251400885536296974": {
+    "userId": "1251400885536296974",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-11-06T01:43:10.416Z",
+    "voiceTimeMinutes": 48,
+    "tier": "bronze"
+  },
+  "110108122269372416": {
+    "userId": "110108122269372416",
+    "balance": 5,
+    "totalEarned": 5,
+    "lastActive": "2025-11-01T16:43:24.662Z",
+    "voiceTimeMinutes": 2318,
+    "tier": "bronze"
+  },
+  "287790342479020033": {
+    "userId": "287790342479020033",
+    "balance": 50,
+    "totalEarned": 50,
+    "lastActive": "2025-11-01T19:23:00.551Z",
+    "voiceTimeMinutes": 3123,
+    "tier": "bronze"
+  },
+  "1422423785960902747": {
+    "userId": "1422423785960902747",
+    "balance": 462,
+    "totalEarned": 462,
+    "lastActive": "2025-11-07T04:24:51.445Z",
+    "voiceTimeMinutes": 1520,
+    "tier": "bronze"
+  },
+  "319967197462134804": {
+    "userId": "319967197462134804",
+    "balance": 88,
+    "totalEarned": 88,
+    "lastActive": "2025-11-07T18:31:08.318Z",
+    "voiceTimeMinutes": 5545,
+    "tier": "bronze"
+  },
+  "224012007454539776": {
+    "userId": "224012007454539776",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-05T18:04:31.494Z",
+    "voiceTimeMinutes": 214,
+    "tier": "bronze"
+  },
+  "485312059391868939": {
+    "userId": "485312059391868939",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-11-02T02:39:44.250Z",
+    "voiceTimeMinutes": 187,
+    "tier": "bronze"
+  },
+  "457923581616193547": {
+    "userId": "457923581616193547",
+    "balance": 407,
+    "totalEarned": 407,
+    "lastActive": "2025-11-06T17:04:03.797Z",
+    "voiceTimeMinutes": 2225,
+    "tier": "bronze"
+  },
+  "537408886332981268": {
+    "userId": "537408886332981268",
+    "balance": 126,
+    "totalEarned": 126,
+    "lastActive": "2025-11-02T07:57:58.158Z",
+    "voiceTimeMinutes": 1264,
+    "tier": "bronze"
+  },
+  "1261814793057075222": {
+    "userId": "1261814793057075222",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-02T04:40:23.357Z",
+    "voiceTimeMinutes": 1,
+    "tier": "bronze"
+  },
+  "775417949338075146": {
+    "userId": "775417949338075146",
+    "balance": 32,
+    "totalEarned": 32,
+    "lastActive": "2025-11-02T23:59:16.043Z",
+    "voiceTimeMinutes": 136,
+    "tier": "bronze"
+  },
+  "410954552775278593": {
+    "userId": "410954552775278593",
+    "balance": 10,
+    "totalEarned": 10,
+    "lastActive": "2025-11-04T07:55:39.831Z",
+    "voiceTimeMinutes": 185,
+    "tier": "bronze"
+  },
+  "780999145926295552": {
+    "userId": "780999145926295552",
+    "balance": 72,
+    "totalEarned": 72,
+    "lastActive": "2025-11-02T07:48:10.039Z",
+    "voiceTimeMinutes": 318,
+    "tier": "bronze"
+  },
+  "842090805128724490": {
+    "userId": "842090805128724490",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-02T06:59:04.999Z",
+    "voiceTimeMinutes": 2502,
+    "tier": "bronze"
+  },
+  "704754529786396732": {
+    "userId": "704754529786396732",
+    "balance": 85,
+    "totalEarned": 85,
+    "lastActive": "2025-11-06T20:48:29.166Z",
+    "voiceTimeMinutes": 11183,
+    "tier": "bronze"
+  },
+  "88528388645482496": {
+    "userId": "88528388645482496",
+    "balance": 24,
+    "totalEarned": 24,
+    "lastActive": "2025-11-02T09:26:36.455Z",
+    "voiceTimeMinutes": 1583,
+    "tier": "bronze"
+  },
+  "364957075656409108": {
+    "userId": "364957075656409108",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-11-02T09:04:51.264Z",
+    "voiceTimeMinutes": 3,
+    "tier": "bronze"
+  },
+  "1434254449508876369": {
+    "userId": "1434254449508876369",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-02T09:02:36.586Z",
+    "voiceTimeMinutes": 1,
+    "tier": "bronze"
+  },
+  "144775073100857345": {
+    "userId": "144775073100857345",
+    "balance": 35,
+    "totalEarned": 35,
+    "lastActive": "2025-11-02T10:29:45.202Z",
+    "voiceTimeMinutes": 775,
+    "tier": "bronze"
+  },
+  "590462386301960192": {
+    "userId": "590462386301960192",
+    "balance": 31,
+    "totalEarned": 31,
+    "lastActive": "2025-11-06T01:09:33.259Z",
+    "voiceTimeMinutes": 1143,
+    "tier": "bronze"
+  },
+  "729788545035665482": {
+    "userId": "729788545035665482",
+    "balance": 27,
+    "totalEarned": 27,
+    "lastActive": "2025-11-02T13:58:48.636Z",
+    "voiceTimeMinutes": 70,
+    "tier": "bronze"
+  },
+  "439431676641280000": {
+    "userId": "439431676641280000",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-11-02T14:02:45.495Z",
+    "voiceTimeMinutes": 4,
+    "tier": "bronze"
+  },
+  "1403184505241600041": {
+    "userId": "1403184505241600041",
+    "balance": 284,
+    "totalEarned": 284,
+    "lastActive": "2025-11-06T04:16:25.272Z",
+    "voiceTimeMinutes": 4286,
+    "tier": "bronze"
+  },
+  "363420530617090049": {
+    "userId": "363420530617090049",
+    "balance": 191,
+    "totalEarned": 191,
+    "lastActive": "2025-11-07T14:01:11.457Z",
+    "voiceTimeMinutes": 404,
+    "tier": "bronze"
+  },
+  "776185215697551360": {
+    "userId": "776185215697551360",
+    "balance": 60,
+    "totalEarned": 60,
+    "lastActive": "2025-11-06T08:02:47.852Z",
+    "voiceTimeMinutes": 8008,
+    "tier": "bronze"
+  },
+  "1407193064690417665": {
+    "userId": "1407193064690417665",
+    "balance": 3167,
+    "totalEarned": 3167,
+    "lastActive": "2025-11-07T21:02:52.655Z",
+    "voiceTimeMinutes": 3167,
+    "tier": "bronze"
+  },
+  "527589680938483733": {
+    "userId": "527589680938483733",
+    "balance": 47,
+    "totalEarned": 47,
+    "lastActive": "2025-11-03T18:26:46.674Z",
+    "voiceTimeMinutes": 47,
+    "tier": "bronze"
+  },
+  "736033629859217408": {
+    "userId": "736033629859217408",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-11-04T23:38:56.326Z",
+    "voiceTimeMinutes": 209,
+    "tier": "bronze"
+  },
+  "1382960828856270980": {
+    "userId": "1382960828856270980",
+    "balance": 7,
+    "totalEarned": 7,
+    "lastActive": "2025-11-07T10:29:07.695Z",
+    "voiceTimeMinutes": 7,
+    "tier": "bronze"
+  },
+  "849293573962858517": {
+    "userId": "849293573962858517",
+    "balance": 141,
+    "totalEarned": 141,
+    "lastActive": "2025-11-03T14:03:43.940Z",
+    "voiceTimeMinutes": 327,
+    "tier": "bronze"
+  },
+  "742972298985996320": {
+    "userId": "742972298985996320",
+    "balance": 241,
+    "totalEarned": 241,
+    "lastActive": "2025-11-03T14:15:02.455Z",
+    "voiceTimeMinutes": 529,
+    "tier": "bronze"
+  },
+  "1380739617266860102": {
+    "userId": "1380739617266860102",
+    "balance": 3256,
+    "totalEarned": 3256,
+    "lastActive": "2025-11-07T21:37:37.329Z",
+    "voiceTimeMinutes": 20924,
+    "tier": "bronze"
+  },
+  "707284053791080508": {
+    "userId": "707284053791080508",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-03T16:22:06.533Z",
+    "voiceTimeMinutes": 161,
+    "tier": "bronze"
+  },
+  "727143357670883429": {
+    "userId": "727143357670883429",
+    "balance": 204,
+    "totalEarned": 204,
+    "lastActive": "2025-11-07T20:39:23.749Z",
+    "voiceTimeMinutes": 429,
+    "tier": "bronze"
+  },
+  "1330847069199532114": {
+    "userId": "1330847069199532114",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-03T16:55:47.589Z",
+    "voiceTimeMinutes": 22124,
+    "tier": "bronze"
+  },
+  "925504195233206332": {
+    "userId": "925504195233206332",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-03T19:42:12.070Z",
+    "voiceTimeMinutes": 55,
+    "tier": "bronze"
+  },
+  "1208487423105957911": {
+    "userId": "1208487423105957911",
+    "balance": 15,
+    "totalEarned": 15,
+    "lastActive": "2025-11-03T23:06:58.284Z",
+    "voiceTimeMinutes": 15,
+    "tier": "bronze"
+  },
+  "1262597348564140112": {
+    "userId": "1262597348564140112",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-03T21:53:36.702Z",
+    "voiceTimeMinutes": 555,
+    "tier": "bronze"
+  },
+  "1332544450253160499": {
+    "userId": "1332544450253160499",
+    "balance": 12,
+    "totalEarned": 12,
+    "lastActive": "2025-11-04T00:56:25.413Z",
+    "voiceTimeMinutes": 72,
+    "tier": "bronze"
+  },
+  "1021924734771920968": {
+    "userId": "1021924734771920968",
+    "balance": 4864,
+    "totalEarned": 4864,
+    "lastActive": "2025-11-07T21:02:29.863Z",
+    "voiceTimeMinutes": 4864,
+    "tier": "bronze"
+  },
+  "1067168897863778475": {
+    "userId": "1067168897863778475",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-04T10:37:34.055Z",
+    "voiceTimeMinutes": 121,
+    "tier": "bronze"
+  },
+  "294595596738887681": {
+    "userId": "294595596738887681",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-04T05:20:53.305Z",
+    "voiceTimeMinutes": 112,
+    "tier": "bronze"
+  },
+  "596556706117451805": {
+    "userId": "596556706117451805",
+    "balance": 183,
+    "totalEarned": 183,
+    "lastActive": "2025-11-07T09:11:06.752Z",
+    "voiceTimeMinutes": 301,
+    "tier": "bronze"
+  },
+  "923690207751073822": {
+    "userId": "923690207751073822",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-04T10:47:21.031Z",
+    "voiceTimeMinutes": 10699,
+    "tier": "bronze"
+  },
+  "908814324364095529": {
+    "userId": "908814324364095529",
+    "balance": 142,
+    "totalEarned": 142,
+    "lastActive": "2025-11-05T09:54:31.850Z",
+    "voiceTimeMinutes": 2804,
+    "tier": "bronze"
+  },
+  "1433503217240637632": {
+    "userId": "1433503217240637632",
+    "balance": 264,
+    "totalEarned": 264,
+    "lastActive": "2025-11-07T10:29:44.501Z",
+    "voiceTimeMinutes": 279,
+    "tier": "bronze"
+  },
+  "287000858414284802": {
+    "userId": "287000858414284802",
+    "balance": 157,
+    "totalEarned": 157,
+    "lastActive": "2025-11-05T09:54:50.242Z",
+    "voiceTimeMinutes": 157,
+    "tier": "bronze"
+  },
+  "714506456849711144": {
+    "userId": "714506456849711144",
+    "balance": 45,
+    "totalEarned": 45,
+    "lastActive": "2025-11-04T12:40:31.280Z",
+    "voiceTimeMinutes": 45,
+    "tier": "bronze"
+  },
+  "544982135526785025": {
+    "userId": "544982135526785025",
+    "balance": 37,
+    "totalEarned": 37,
+    "lastActive": "2025-11-04T15:57:25.568Z",
+    "voiceTimeMinutes": 286,
+    "tier": "bronze"
+  },
+  "221009996320604162": {
+    "userId": "221009996320604162",
+    "balance": 214,
+    "totalEarned": 214,
+    "lastActive": "2025-11-05T22:12:27.542Z",
+    "voiceTimeMinutes": 4467,
+    "tier": "bronze"
+  },
+  "1432613838104166473": {
+    "userId": "1432613838104166473",
+    "balance": 3947,
+    "totalEarned": 3947,
+    "lastActive": "2025-11-07T21:02:43.427Z",
+    "voiceTimeMinutes": 3947,
+    "tier": "bronze"
+  },
+  "257580892007038976": {
+    "userId": "257580892007038976",
+    "balance": 32,
+    "totalEarned": 32,
+    "lastActive": "2025-11-04T20:53:08.255Z",
+    "voiceTimeMinutes": 5983,
+    "tier": "bronze"
+  },
+  "172178207796232192": {
+    "userId": "172178207796232192",
+    "balance": 166,
+    "totalEarned": 166,
+    "lastActive": "2025-11-06T07:19:05.743Z",
+    "voiceTimeMinutes": 180,
+    "tier": "bronze"
+  },
+  "503616370118754304": {
+    "userId": "503616370118754304",
+    "balance": 122,
+    "totalEarned": 122,
+    "lastActive": "2025-11-05T02:44:38.074Z",
+    "voiceTimeMinutes": 11027,
+    "tier": "bronze"
+  },
+  "783795234110308392": {
+    "userId": "783795234110308392",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-05T04:08:46.728Z",
+    "voiceTimeMinutes": 1,
+    "tier": "bronze"
+  },
+  "983430893152649236": {
+    "userId": "983430893152649236",
+    "balance": 374,
+    "totalEarned": 374,
+    "lastActive": "2025-11-06T03:38:57.087Z",
+    "voiceTimeMinutes": 374,
+    "tier": "bronze"
+  },
+  "1418009118702043159": {
+    "userId": "1418009118702043159",
+    "balance": 3,
+    "totalEarned": 3,
+    "lastActive": "2025-11-05T07:12:33.999Z",
+    "voiceTimeMinutes": 20,
+    "tier": "bronze"
+  },
+  "1082110963215507488": {
+    "userId": "1082110963215507488",
+    "balance": 20,
+    "totalEarned": 20,
+    "lastActive": "2025-11-05T08:33:17.316Z",
+    "voiceTimeMinutes": 20,
+    "tier": "bronze"
+  },
+  "1190176943581184032": {
+    "userId": "1190176943581184032",
+    "balance": 6,
+    "totalEarned": 6,
+    "lastActive": "2025-11-05T08:19:22.612Z",
+    "voiceTimeMinutes": 6,
+    "tier": "bronze"
+  },
+  "1172521561027252277": {
+    "userId": "1172521561027252277",
+    "balance": 10,
+    "totalEarned": 10,
+    "lastActive": "2025-11-05T08:59:24.143Z",
+    "voiceTimeMinutes": 222,
+    "tier": "bronze"
+  },
+  "764285956009361478": {
+    "userId": "764285956009361478",
+    "balance": 47,
+    "totalEarned": 47,
+    "lastActive": "2025-11-06T02:33:22.293Z",
+    "voiceTimeMinutes": 744,
+    "tier": "bronze"
+  },
+  "627782902788390912": {
+    "userId": "627782902788390912",
+    "balance": 16,
+    "totalEarned": 16,
+    "lastActive": "2025-11-05T12:32:51.227Z",
+    "voiceTimeMinutes": 5078,
+    "tier": "bronze"
+  },
+  "1403071563963564135": {
+    "userId": "1403071563963564135",
+    "balance": 9,
+    "totalEarned": 9,
+    "lastActive": "2025-11-05T12:57:34.807Z",
+    "voiceTimeMinutes": 9,
+    "tier": "bronze"
+  },
+  "1126236071571763221": {
+    "userId": "1126236071571763221",
+    "balance": 15,
+    "totalEarned": 15,
+    "lastActive": "2025-11-05T17:54:21.751Z",
+    "voiceTimeMinutes": 299,
+    "tier": "bronze"
+  },
+  "1434001465260773459": {
+    "userId": "1434001465260773459",
+    "balance": 311,
+    "totalEarned": 311,
+    "lastActive": "2025-11-07T17:40:35.050Z",
+    "voiceTimeMinutes": 519,
+    "tier": "bronze"
+  },
+  "760748575859671050": {
+    "userId": "760748575859671050",
+    "balance": 30,
+    "totalEarned": 30,
+    "lastActive": "2025-11-06T00:40:21.832Z",
+    "voiceTimeMinutes": 1287,
+    "tier": "bronze"
+  },
+  "449972462566768679": {
+    "userId": "449972462566768679",
+    "balance": 16,
+    "totalEarned": 16,
+    "lastActive": "2025-11-06T01:09:14.837Z",
+    "voiceTimeMinutes": 47,
+    "tier": "bronze"
+  },
+  "1195918074881257542": {
+    "userId": "1195918074881257542",
+    "balance": 52,
+    "totalEarned": 52,
+    "lastActive": "2025-11-07T16:13:46.810Z",
+    "voiceTimeMinutes": 12770,
+    "tier": "bronze"
+  },
+  "478752391877885993": {
+    "userId": "478752391877885993",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-06T02:19:52.322Z",
+    "voiceTimeMinutes": 962,
+    "tier": "bronze"
+  },
+  "1401858433182994453": {
+    "userId": "1401858433182994453",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-06T02:20:04.814Z",
+    "voiceTimeMinutes": 2,
+    "tier": "bronze"
+  },
+  "1192195323930611742": {
+    "userId": "1192195323930611742",
+    "balance": 98,
+    "totalEarned": 98,
+    "lastActive": "2025-11-07T08:14:32.169Z",
+    "voiceTimeMinutes": 2374,
+    "tier": "bronze"
+  },
+  "1288325208557748224": {
+    "userId": "1288325208557748224",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-06T06:58:50.042Z",
+    "voiceTimeMinutes": 1453,
+    "tier": "bronze"
+  },
+  "1435143472649863189": {
+    "userId": "1435143472649863189",
+    "balance": 631,
+    "totalEarned": 631,
+    "lastActive": "2025-11-07T18:00:03.834Z",
+    "voiceTimeMinutes": 631,
+    "tier": "bronze"
+  },
+  "1302853754499891200": {
+    "userId": "1302853754499891200",
+    "balance": 40,
+    "totalEarned": 40,
+    "lastActive": "2025-11-07T16:47:02.659Z",
+    "voiceTimeMinutes": 325,
+    "tier": "bronze"
+  },
+  "790205004333973525": {
+    "userId": "790205004333973525",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-11-06T21:31:48.198Z",
+    "voiceTimeMinutes": 175,
+    "tier": "bronze"
+  },
+  "937060962773663745": {
+    "userId": "937060962773663745",
+    "balance": 2,
+    "totalEarned": 2,
+    "lastActive": "2025-11-06T19:44:34.258Z",
+    "voiceTimeMinutes": 16,
+    "tier": "bronze"
+  },
+  "497291449013108736": {
+    "userId": "497291449013108736",
+    "balance": 52,
+    "totalEarned": 52,
+    "lastActive": "2025-11-06T21:03:14.078Z",
+    "voiceTimeMinutes": 163,
+    "tier": "bronze"
+  },
+  "1121678860241608774": {
+    "userId": "1121678860241608774",
+    "balance": 53,
+    "totalEarned": 53,
+    "lastActive": "2025-11-06T21:51:58.419Z",
+    "voiceTimeMinutes": 68,
+    "tier": "bronze"
+  },
+  "1197079735138791494": {
+    "userId": "1197079735138791494",
+    "balance": 5,
+    "totalEarned": 5,
+    "lastActive": "2025-11-06T22:09:59.659Z",
+    "voiceTimeMinutes": 779,
+    "tier": "bronze"
+  },
+  "398871650856337425": {
+    "userId": "398871650856337425",
+    "balance": 29,
+    "totalEarned": 29,
+    "lastActive": "2025-11-06T23:46:15.383Z",
+    "voiceTimeMinutes": 13361,
+    "tier": "bronze"
+  },
+  "1257012294513328210": {
+    "userId": "1257012294513328210",
+    "balance": 96,
+    "totalEarned": 96,
+    "lastActive": "2025-11-07T19:21:43.995Z",
+    "voiceTimeMinutes": 1131,
+    "tier": "bronze"
+  },
+  "982140658309562378": {
+    "userId": "982140658309562378",
+    "balance": 12,
+    "totalEarned": 12,
+    "lastActive": "2025-11-07T07:20:45.514Z",
+    "voiceTimeMinutes": 12,
+    "tier": "bronze"
+  },
+  "288091099170471936": {
+    "userId": "288091099170471936",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-11-07T08:12:32.061Z",
+    "voiceTimeMinutes": 336,
+    "tier": "bronze"
+  },
+  "198988582705299477": {
+    "userId": "198988582705299477",
+    "balance": 29,
+    "totalEarned": 29,
+    "lastActive": "2025-11-07T11:06:59.267Z",
+    "voiceTimeMinutes": 3718,
+    "tier": "bronze"
+  },
+  "767452967334314005": {
+    "userId": "767452967334314005",
+    "balance": 4,
+    "totalEarned": 4,
+    "lastActive": "2025-11-07T11:30:18.162Z",
+    "voiceTimeMinutes": 817,
+    "tier": "bronze"
+  },
+  "1367417833138556950": {
+    "userId": "1367417833138556950",
+    "balance": 71,
+    "totalEarned": 71,
+    "lastActive": "2025-11-07T15:27:19.299Z",
+    "voiceTimeMinutes": 8760,
+    "tier": "bronze"
+  },
+  "1010144186068107266": {
+    "userId": "1010144186068107266",
+    "balance": 37,
+    "totalEarned": 37,
+    "lastActive": "2025-11-07T15:29:32.875Z",
+    "voiceTimeMinutes": 3211,
+    "tier": "bronze"
+  },
+  "412347553141751808": {
+    "userId": "412347553141751808",
+    "balance": 14,
+    "totalEarned": 14,
+    "lastActive": "2025-11-07T16:15:01.589Z",
+    "voiceTimeMinutes": 1388,
+    "tier": "bronze"
+  },
+  "1435738266614759527": {
+    "userId": "1435738266614759527",
+    "balance": 23,
+    "totalEarned": 23,
+    "lastActive": "2025-11-07T16:47:31.884Z",
+    "voiceTimeMinutes": 23,
+    "tier": "bronze"
+  },
+  "197988061420716033": {
+    "userId": "197988061420716033",
+    "balance": 13,
+    "totalEarned": 13,
+    "lastActive": "2025-11-07T17:20:23.732Z",
+    "voiceTimeMinutes": 1331,
+    "tier": "bronze"
+  },
+  "420160295701577728": {
+    "userId": "420160295701577728",
+    "balance": 1,
+    "totalEarned": 1,
+    "lastActive": "2025-11-07T17:26:59.644Z",
+    "voiceTimeMinutes": 228,
+    "tier": "bronze"
+  }
+}

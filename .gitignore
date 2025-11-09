@@ -97,5 +97,10 @@ jspm_packages/
 ehthumbs.db
 Thumbs.db
 
-# Data directory
-data/ 
+# Data directory - ignore all except tracked files
+data/*
+!data/users.json
+!data/moderation-logs.json
+!data/timeouts.json
+!data/transactions.json
+!data/voice-sessions.json 
