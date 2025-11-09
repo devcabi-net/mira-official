@@ -361,7 +361,7 @@ async function handleRoleAction(
       moderatorId: interaction.user.id,
       targetId: targetMember.id,
       action: `${actionName}: ${role.name}`,
-      cost: dynamicCost,
+      cost: discountedCost, // Store the actual cost paid (with discount)
       reason,
       timestamp: new Date(),
       success: true
