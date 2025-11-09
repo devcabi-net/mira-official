@@ -112,43 +112,91 @@ export async function handleAutocomplete(
   config: CurrencyConfig,
   currencyService: CurrencyService
 ): Promise<void> {
-  const focusedValue = interaction.options.getFocused()
-  const user = await currencyService.getUser(interaction.user.id)
-  
-  if (!user) {
-    await interaction.respond([])
-    return
-  }
+  try {
+    const focusedValue = interaction.options.getFocused()
+    
+    // Use getOrCreateUser instead of getUser to ensure new users can see options
+    // This creates a user with default values (bronze tier, 0 balance) if they don't exist
+    const user = await currencyService.getOrCreateUser(interaction.user.id)
 
-  // Filter actions based on user's tier
-  const availableActions = config.moderationActions.filter(action => {
-    const tierOrder = ['bronze', 'silver', 'gold', 'platinum', 'diamond']
-    const userTierIndex = tierOrder.indexOf(user.tier)
-    const requiredTierIndex = tierOrder.indexOf(action.requiredTier)
-    return userTierIndex >= requiredTierIndex
-  })
+    // IMPORTANT: Show ALL actions in autocomplete regardless of tier
+    // Tier restrictions are enforced at execution time, not in autocomplete
+    // This allows users to see what actions are available even if they can't use them yet
+    let availableActions = config.moderationActions
 
-  // Filter based on focused value
-  const filteredActions = availableActions.filter(action =>
-    action.name.toLowerCase().includes(focusedValue.toLowerCase()) ||
-    action.description.toLowerCase().includes(focusedValue.toLowerCase())
-  )
+    // Filter based on focused value (user's typed input)
+    // If focusedValue is empty or just whitespace, show all actions
+    const searchTerm = focusedValue?.trim().toLowerCase() || ''
+    const filteredActions = searchTerm 
+      ? availableActions.filter(action =>
+          action.name.toLowerCase().includes(searchTerm) ||
+          action.description.toLowerCase().includes(searchTerm) ||
+          action.id.toLowerCase().includes(searchTerm)
+        )
+      : availableActions // Show all if no search term
 
-  const choices = filteredActions.map(action => {
-    // For role actions, show note about dynamic pricing
-    if (action.id === 'role-give' || action.id === 'role-take') {
-      return {
-        name: `${action.name} (Dynamic pricing - select role)`,
-        value: action.id
+    const choices = filteredActions.map(action => {
+      // Calculate discounted cost based on user's tier
+      const userTier = user?.tier || 'bronze'
+      const discountedCost = currencyService.calculateDiscountedCost(action.cost, userTier)
+      const discountAmount = action.cost - discountedCost
+      
+      // For role actions, show note about dynamic pricing
+      if (action.id === 'role-give' || action.id === 'role-take') {
+        // Role actions use dynamic pricing based on role hierarchy
+        // Show base cost with discount note if applicable
+        const discountNote = discountAmount > 0 ? ` (${discountAmount.toLocaleString()} off for ${userTier} tier)` : ''
+        return {
+          name: `${action.name} (Dynamic pricing - select role)${discountNote}`,
+          value: action.id
+        }
+      }
+      
+      // For other actions, show discounted price with original price if discounted
+      if (discountAmount > 0) {
+        return {
+          name: `${action.name} (${discountedCost.toLocaleString()} credits, was ${action.cost.toLocaleString()})`,
+          value: action.id
+        }
+      } else {
+        return {
+          name: `${action.name} (${action.cost.toLocaleString()} credits)`,
+          value: action.id
+        }
+      }
+    })
+
+    // Always respond, even if empty (Discord requires a response within 3 seconds)
+    // If there are no matching actions, send empty array rather than failing silently
+    await interaction.respond(choices.slice(0, 25)) // Discord limit
+  } catch (error: any) {
+    console.error('Error in autocomplete handler:', error)
+    console.error('Error details:', {
+      userId: interaction.user?.id,
+      commandName: interaction.commandName,
+      focusedValue: interaction.options?.getFocused?.(),
+      errorCode: error.code,
+      errorMessage: error.message
+    })
+    
+    // If interaction already responded or expired, just log and return
+    if (error.code === 10062 || error.message?.includes('Unknown interaction') || error.message?.includes('already been responded')) {
+      console.warn('Autocomplete interaction expired or already responded')
+      return
+    }
+    
+    // Try to respond with empty array as fallback to prevent "No options found" error
+    try {
+      if (!interaction.responded) {
+        await interaction.respond([])
+      }
+    } catch (respondError: any) {
+      // If we can't respond, log it but don't throw - interaction may have expired
+      if (respondError.code !== 10062) {
+        console.error('Failed to send autocomplete fallback response:', respondError)
       }
     }
-    return {
-      name: `${action.name} (${action.cost.toLocaleString()} credits)`,
-      value: action.id
-    }
-  })
-
-  await interaction.respond(choices.slice(0, 25)) // Discord limit
+  }
 }
 
 async function handleRoleAction(
@@ -205,13 +253,17 @@ async function handleRoleAction(
 
   // Calculate dynamic cost based on role hierarchy
   // Top role costs 1,000,000 credits, lower roles cost exponentially less
-  const dynamicCost = calculateRoleCost(role as any, interaction.guild)
+  const baseDynamicCost = calculateRoleCost(role as any, interaction.guild)
+  
+  // Apply tier-based discount to dynamic role cost
+  const discountedCost = currencyService.calculateDiscountedCost(baseDynamicCost, user.tier)
+  const discountAmount = baseDynamicCost - discountedCost
 
-  // Check if user has enough credits
-  if (user.balance < dynamicCost) {
+  // Check if user has enough credits (using discounted cost)
+  if (user.balance < discountedCost) {
     await interaction.editReply({
       embeds: [createErrorEmbed(
-        `Insufficient Social Credits. Required: ${dynamicCost.toLocaleString()} credits (cost based on role hierarchy), Available: ${user.balance.toLocaleString()} credits`
+        `Insufficient Social Credits. Required: ${discountedCost.toLocaleString()} credits (cost based on role hierarchy${discountAmount > 0 ? `, ${discountAmount.toLocaleString()} discount for ${user.tier} tier` : ''}), Available: ${user.balance.toLocaleString()} credits`
       )]
     })
     return
@@ -232,20 +284,9 @@ async function handleRoleAction(
     return
   }
 
-  // Check cooldown and tier (using the action from config)
+  // Check cooldown (no tier requirement - all actions available to all users)
   const roleAction = config.moderationActions.find(a => a.id === actionId)
   if (roleAction) {
-    // Check tier requirement
-    const tierOrder = ['bronze', 'silver', 'gold', 'platinum', 'diamond']
-    const userTierIndex = tierOrder.indexOf(user.tier)
-    const requiredTierIndex = tierOrder.indexOf(roleAction.requiredTier)
-    if (userTierIndex < requiredTierIndex) {
-      await interaction.editReply({
-        embeds: [createErrorEmbed(`Insufficient tier. Required: ${roleAction.requiredTier}, Current: ${user.tier}`)]
-      })
-      return
-    }
-    
     // Check cooldown manually (we bypass cost check since it's dynamic)
     const userCooldowns = (currencyService as any).userCooldowns
     if (userCooldowns) {
@@ -265,12 +306,12 @@ async function handleRoleAction(
     }
   }
 
-  // Deduct currency with dynamic cost
+  // Deduct currency with discounted dynamic cost
   const deductResult = await currencyService.deductCurrency(
     interaction.user.id,
-    dynamicCost,
+    discountedCost,
     `Role ${actionId === 'role-give' ? 'give' : 'take'}: ${role.name}`,
-    { targetId: targetMember.id, roleId: role.id, actionId, dynamicCost },
+    { targetId: targetMember.id, roleId: role.id, actionId, originalCost: baseDynamicCost, discountedCost, userTier: user.tier },
     interaction.guild,
     interaction.member as any
   )
@@ -296,14 +337,17 @@ async function handleRoleAction(
     }
 
     const actionName = actionId === 'role-give' ? 'Give Role' : 'Take Role'
+    const discountMessage = discountAmount > 0 
+      ? `\n🎉 Discount: ${discountAmount.toLocaleString()} credits (${user.tier} tier discount!)`
+      : ''
     const embed = createEmbed({
       title: '✅ Role Action Successful',
-      description: `**${actionName}** performed successfully!\n\n💰 Cost: ${dynamicCost.toLocaleString()} Social Credits\n👤 Target: ${targetMember.user.tag}\n🎭 Role: ${role.name}\n📝 Reason: ${reason}`,
+      description: `**${actionName}** performed successfully!\n\n💰 Cost: ${discountedCost.toLocaleString()} Social Credits${discountMessage}\n👤 Target: ${targetMember.user.tag}\n🎭 Role: ${role.name}\n📝 Reason: ${reason}`,
       color: 0x00ff00,
       fields: [
         {
           name: '📊 Role Hierarchy Info',
-          value: `Role Position: ${(role as any).position}\nCost calculated based on role hierarchy position`,
+          value: `Role Position: ${(role as any).position}\nBase Cost: ${baseDynamicCost.toLocaleString()} credits\nCost calculated based on role hierarchy position`,
           inline: false
         }
       ]
@@ -341,9 +385,9 @@ async function handleRoleAction(
     // Refund the currency
     await currencyService.addCurrency(
       interaction.user.id,
-      dynamicCost,
+      discountedCost,
       `Refund for failed ${actionId} action`,
-      { refund: true, originalCost: dynamicCost },
+      { refund: true, originalCost: baseDynamicCost, discountedCost },
       interaction.guild,
       interaction.member as any
     )
@@ -531,9 +575,14 @@ async function handleModerationAction(
         break
     }
 
+    // Show discount message if applicable
+    const discountMessage = result.originalCost && result.cost && result.originalCost > result.cost
+      ? `\n🎉 Discount: ${(result.originalCost - result.cost).toLocaleString()} credits (${user.tier} tier discount!)`
+      : ''
+    
     const embed = createEmbed({
       title: '✅ Moderation Action Successful',
-      description: `**${action.name}** performed successfully!\n\n💰 Cost: ${result.cost?.toLocaleString()} Social Credits\n👤 Target: ${targetMember.user.tag}\n📝 Reason: ${reason}`,
+      description: `**${action.name}** performed successfully!\n\n💰 Cost: ${result.cost?.toLocaleString()} Social Credits${discountMessage}\n👤 Target: ${targetMember.user.tag}\n📝 Reason: ${reason}`,
       color: 0x00ff00
     })
 

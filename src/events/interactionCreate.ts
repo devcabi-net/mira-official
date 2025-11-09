@@ -28,9 +28,43 @@ export async function execute(
   if (interaction.isAutocomplete()) {
     if (!currencyService || !currencyConfig) {
       console.error('Currency service or config not provided for autocomplete')
+      // Try to respond with empty array to prevent "No options found" error
+      try {
+        if (!interaction.responded) {
+          await interaction.respond([])
+        }
+      } catch (error: any) {
+        // Ignore errors if interaction expired
+        if (error.code !== 10062) {
+          console.error('Failed to send autocomplete error response:', error)
+        }
+      }
       return
     }
-    await handleAutocomplete(interaction, currencyConfig, currencyService)
+    
+    try {
+      await handleAutocomplete(interaction, currencyConfig, currencyService)
+    } catch (error: any) {
+      console.error('Error in autocomplete handler:', error)
+      
+      // Handle "Unknown interaction" error - interaction expired
+      if (error.code === 10062 || error.message?.includes('Unknown interaction')) {
+        console.warn('Autocomplete interaction expired before response could be sent')
+        return
+      }
+      
+      // Try to respond with empty array as fallback
+      try {
+        if (!interaction.responded) {
+          await interaction.respond([])
+        }
+      } catch (respondError: any) {
+        // If we can't respond, just log it - interaction likely expired
+        if (respondError.code !== 10062) {
+          console.error('Failed to send autocomplete fallback response:', respondError)
+        }
+      }
+    }
     return
   }
 
@@ -505,9 +539,27 @@ async function handleAutocomplete(
   currencyConfig: CurrencyConfig,
   currencyService: CurrencyService
 ): Promise<void> {
-  if (interaction.commandName !== 'marketplace') return
+  if (interaction.commandName !== 'marketplace') {
+    // If it's not a marketplace command, respond with empty array
+    try {
+      if (!interaction.responded) {
+        await interaction.respond([])
+      }
+    } catch (error: any) {
+      if (error.code !== 10062) {
+        console.error('Failed to respond to non-marketplace autocomplete:', error)
+      }
+    }
+    return
+  }
   
-  // Import the marketplace autocomplete handler
-  const { handleAutocomplete: marketplaceAutocomplete } = await import('@/commands/marketplace')
-  await marketplaceAutocomplete(interaction, currencyConfig, currencyService)
+  try {
+    // Import the marketplace autocomplete handler
+    const { handleAutocomplete: marketplaceAutocomplete } = await import('@/commands/marketplace')
+    await marketplaceAutocomplete(interaction, currencyConfig, currencyService)
+  } catch (error: any) {
+    console.error('Error in marketplace autocomplete handler:', error)
+    // Re-throw to be handled by the outer try-catch
+    throw error
+  }
 } 

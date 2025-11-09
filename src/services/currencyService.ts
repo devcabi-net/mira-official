@@ -217,11 +217,32 @@ export class CurrencyService {
     await this.dataService.saveUser(user)
   }
 
+  // Calculate tier-based discount on action cost
+  // Higher tiers get better discounts: Bronze=0%, Silver=10%, Gold=20%, Platinum=30%, Diamond=40%
+  calculateDiscountedCost(baseCost: number, userTier: CurrencyTier): number {
+    const tierDiscounts: Record<CurrencyTier, number> = {
+      bronze: 0,      // 0% discount
+      silver: 0.10,   // 10% discount
+      gold: 0.20,     // 20% discount
+      platinum: 0.30, // 30% discount
+      diamond: 0.40   // 40% discount
+    }
+    
+    const discount = tierDiscounts[userTier] || 0
+    const discountedCost = Math.floor(baseCost * (1 - discount))
+    return Math.max(1, discountedCost) // Ensure cost is at least 1
+  }
+
+  // Get discounted cost for an action based on user tier
+  getActionCost(action: ModerationAction, userTier: CurrencyTier): number {
+    return this.calculateDiscountedCost(action.cost, userTier)
+  }
+
   // Moderation Actions
   async canPerformModerationAction(
     userId: string, 
     actionId: string
-  ): Promise<{ canPerform: boolean; error?: string; action?: ModerationAction }> {
+  ): Promise<{ canPerform: boolean; error?: string; action?: ModerationAction; discountedCost?: number }> {
     const action = this.config.moderationActions.find(a => a.id === actionId)
     if (!action) {
       return { canPerform: false, error: 'Invalid moderation action' }
@@ -229,23 +250,21 @@ export class CurrencyService {
     
     const user = await this.getOrCreateUser(userId)
     
-    // Check currency requirement
-    if (user.balance < action.cost) {
+    // Calculate discounted cost based on user's tier
+    const discountedCost = this.getActionCost(action, user.tier)
+    
+    // Check currency requirement (using discounted cost)
+    if (user.balance < discountedCost) {
       return { 
         canPerform: false, 
-        error: `Insufficient currency. Required: ${action.cost}, Available: ${user.balance}`,
-        action 
+        error: `Insufficient currency. Required: ${discountedCost.toLocaleString()}, Available: ${user.balance.toLocaleString()}`,
+        action,
+        discountedCost
       }
     }
     
-    // Check tier requirement
-    if (!this.hasRequiredTier(user.tier, action.requiredTier)) {
-      return { 
-        canPerform: false, 
-        error: `Insufficient tier. Required: ${action.requiredTier}, Current: ${user.tier}`,
-        action 
-      }
-    }
+    // No tier requirement check - all actions are available to all users
+    // Tiers only affect pricing (discounts)
     
     // Check cooldown
     const cooldownCheck = this.checkCooldown(userId, actionId, action.cooldown)
@@ -253,11 +272,12 @@ export class CurrencyService {
       return { 
         canPerform: false, 
         error: `Action on cooldown. Available in ${cooldownCheck.remainingTime} minutes`,
-        action 
+        action,
+        discountedCost
       }
     }
     
-    return { canPerform: true, action }
+    return { canPerform: true, action, discountedCost }
   }
 
   async performModerationAction(
@@ -266,10 +286,10 @@ export class CurrencyService {
     actionId: string,
     reason: string,
     guild?: Guild
-  ): Promise<{ success: boolean; message: string; cost?: number }> {
+  ): Promise<{ success: boolean; message: string; cost?: number; originalCost?: number }> {
     const canPerform = await this.canPerformModerationAction(moderatorId, actionId)
     
-    if (!canPerform.canPerform || !canPerform.action) {
+    if (!canPerform.canPerform || !canPerform.action || !canPerform.discountedCost) {
       return {
         success: false,
         message: canPerform.error || 'Cannot perform moderation action'
@@ -277,13 +297,14 @@ export class CurrencyService {
     }
     
     const action = canPerform.action
+    const discountedCost = canPerform.discountedCost
     
-    // Deduct currency
+    // Deduct currency using discounted cost
     const deductResult = await this.deductCurrency(
       moderatorId,
-      action.cost,
+      discountedCost,
       `Moderation action: ${action.name}`,
-      { targetId, actionId, reason },
+      { targetId, actionId, reason, originalCost: action.cost, discountedCost, userTier: (await this.getUser(moderatorId))?.tier },
       guild
     )
     
@@ -297,13 +318,13 @@ export class CurrencyService {
     // Set cooldown
     this.setCooldown(moderatorId, actionId, action.cooldown)
     
-    // Log moderation action
+    // Log moderation action (store both original and discounted cost)
     const log: ModerationLog = {
       id: this.generateId(),
       moderatorId,
       targetId,
       action: action.name,
-      cost: action.cost,
+      cost: discountedCost, // Store the actual cost paid
       reason,
       timestamp: new Date(),
       success: true
@@ -315,10 +336,18 @@ export class CurrencyService {
       await this.loggingService.logModerationAction(guild, log)
     }
     
+    // Build success message showing discount if applicable
+    const user = await this.getUser(moderatorId)
+    const discountAmount = action.cost - discountedCost
+    const discountMessage = discountAmount > 0 
+      ? ` (${discountAmount.toLocaleString()} discount applied for ${user?.tier || 'bronze'} tier!)`
+      : ''
+    
     return {
       success: true,
-      message: `Successfully performed ${action.name}. Cost: ${action.cost} Social Credits`,
-      cost: action.cost
+      message: `Successfully performed ${action.name}. Cost: ${discountedCost.toLocaleString()} Social Credits${discountMessage}`,
+      cost: discountedCost,
+      originalCost: action.cost
     }
   }
 
@@ -424,12 +453,11 @@ export class CurrencyService {
     return costs[tier]
   }
 
+  // Deprecated: Tiers no longer restrict access, only provide discounts
+  // Keeping for backwards compatibility but not used
   private hasRequiredTier(userTier: CurrencyTier, requiredTier: CurrencyTier): boolean {
-    const tierOrder = ['bronze', 'silver', 'gold', 'platinum', 'diamond']
-    const userTierIndex = tierOrder.indexOf(userTier)
-    const requiredTierIndex = tierOrder.indexOf(requiredTier)
-    
-    return userTierIndex >= requiredTierIndex
+    // Always return true - all actions are available to all users
+    return true
   }
 
   private checkCooldown(userId: string, actionId: string, cooldownMinutes: number): { canUse: boolean; remainingTime: number } {
