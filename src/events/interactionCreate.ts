@@ -43,8 +43,14 @@ export async function execute(
 
     try {
       await handleModalSubmit(interaction, currencyService, currencyConfig, timeoutTracker)
-    } catch (error) {
+    } catch (error: any) {
       console.error(`Error handling modal submission:`, error)
+      
+      // Handle "Unknown interaction" error - interaction expired
+      if (error.code === 10062 || error.message?.includes('Unknown interaction')) {
+        console.warn('Interaction expired before response could be sent')
+        return
+      }
       
       const errorMessage = {
         embeds: [{
@@ -54,10 +60,17 @@ export async function execute(
         }]
       }
 
-      if (interaction.replied || interaction.deferred) {
-        await interaction.followUp(errorMessage)
-      } else {
-        await interaction.reply({ ...errorMessage, flags: MessageFlags.Ephemeral })
+      try {
+        if (interaction.replied || interaction.deferred) {
+          await interaction.followUp(errorMessage)
+        } else {
+          await interaction.reply({ ...errorMessage, flags: MessageFlags.Ephemeral })
+        }
+      } catch (replyError: any) {
+        // If we can't reply, just log it - interaction likely expired
+        if (replyError.code !== 10062) {
+          console.error('Failed to send error response:', replyError)
+        }
       }
     }
     return
@@ -83,8 +96,14 @@ export async function execute(
     } else {
       await command.execute(interaction)
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error(`Error executing ${interaction.commandName}:`, error)
+    
+    // Handle "Unknown interaction" error - interaction expired
+    if (error.code === 10062 || error.message?.includes('Unknown interaction')) {
+      console.warn('Interaction expired before response could be sent')
+      return
+    }
     
     const errorMessage = {
       embeds: [{
@@ -94,10 +113,17 @@ export async function execute(
       }]
     }
 
-    if (interaction.replied || interaction.deferred) {
-      await interaction.followUp(errorMessage)
-    } else {
-      await interaction.reply({ ...errorMessage, flags: MessageFlags.Ephemeral })
+    try {
+      if (interaction.replied || interaction.deferred) {
+        await interaction.followUp(errorMessage)
+      } else {
+        await interaction.reply({ ...errorMessage, flags: MessageFlags.Ephemeral })
+      }
+    } catch (replyError: any) {
+      // If we can't reply, just log it - interaction likely expired
+      if (replyError.code !== 10062) {
+        console.error('Failed to send error response:', replyError)
+      }
     }
   }
 }
@@ -445,11 +471,32 @@ async function handleModerationModal(
         embeds: [createErrorEmbed('Failed to apply the action. Currency has been refunded.')]
       })
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error handling moderation modal:', error)
-    await interaction.editReply({
-      embeds: [createErrorEmbed('An error occurred while processing the moderation action.')]
-    })
+    
+    // Handle "Unknown interaction" error - interaction expired
+    if (error.code === 10062 || error.message?.includes('Unknown interaction')) {
+      console.warn('Interaction expired before response could be sent')
+      return
+    }
+    
+    try {
+      if (interaction.deferred && !interaction.replied) {
+        await interaction.editReply({
+          embeds: [createErrorEmbed('An error occurred while processing the moderation action.')]
+        })
+      } else if (!interaction.replied && !interaction.deferred) {
+        await interaction.reply({
+          embeds: [createErrorEmbed('An error occurred while processing the moderation action.')],
+          flags: MessageFlags.Ephemeral
+        })
+      }
+    } catch (replyError: any) {
+      // If we can't reply, just log it - interaction likely expired
+      if (replyError.code !== 10062) {
+        console.error('Failed to send error response:', replyError)
+      }
+    }
   }
 }
 
